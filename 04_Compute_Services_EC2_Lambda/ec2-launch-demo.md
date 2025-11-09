@@ -35,10 +35,6 @@ The real point here wasn't just getting a server online—it was doing it the ri
 
 The EC2 instance lives inside a specific **Availability Zone (AZ)** and uses **Amazon EBS** for storage that sticks around even if the instance goes down. This setup follows the kind of resilient, multi-AZ patterns you see in production environments.
 
-<p align="center">
-  <img src="../assets/diagrams/cloud computing ec2.png" alt="Multi-AZ EC2 Architecture" width="80%"/>
-</p>
-
 **The Key Pieces:**
 - **Compute Layer:** EC2 instances spread across multiple AZs for reliability
 - **Storage Layer:** Amazon EBS volumes—your data persists even if things crash
@@ -62,10 +58,6 @@ Honestly, getting comfortable with this architecture is half the battle when you
 | **Availability Zone** | User-selected | Lets you think about high availability and disaster recovery from day one. |
 
 ### Network & Security Configuration
-
-<p align="center">
-  <img src="../assets/diagrams/screencapture-labs-vocareum-main-main-php-2025-11-09-09_22_53.png" alt="Security Group Configuration" width="75%"/>
-</p>
 
 #### Security Group Rules
 
@@ -132,17 +124,9 @@ Once you start thinking in terms of automation, you never want to click through 
 
 ### System Boot Verification
 
-<p align="center">
-  <img src="../assets/diagrams/image_7e48a8.png" alt="Amazon Linux 2023 Boot Sequence" width="60%"/>
-</p>
-
 The instance boots up clean, confirming everything's working as expected.
 
 ### Security Architecture
-
-<p align="center">
-  <img src="../assets/diagrams/image_7e406a.png" alt="EC2 Security Group Architecture" width="70%"/>
-</p>
 
 **Defense-in-Depth Strategy:**
 1. **Network ACLs** — Subnet-level filtering (your outer perimeter)
