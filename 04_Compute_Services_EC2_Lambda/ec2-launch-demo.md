@@ -191,8 +191,6 @@ Honestly, the best part about learning this stuff is realizing how much control 
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
-I'm building real projects, not just following tutorials. The goal is to prove I can actually build things, not just pass exams.
-
 ---
 
 ## 🤝 Let's Connect
