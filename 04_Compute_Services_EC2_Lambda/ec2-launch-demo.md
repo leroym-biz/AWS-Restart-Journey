@@ -35,9 +35,9 @@ The real point here wasn't just getting a server online—it was doing it the ri
 
 The EC2 instance lives inside a specific **Availability Zone (AZ)** and uses **Amazon EBS** for storage that sticks around even if the instance goes down. This setup follows the kind of resilient, multi-AZ patterns you see in production environments.
 
-<p align="center">
+[<p align="center">
   <img src="../assets/diagrams/cloud computing ec2.png" alt="Multi-AZ EC2 Architecture" width="80%"/>
-</p>
+</p>](https://raw.githubusercontent.com/leroym-biz/AWS-restart-journey/main/assets/diagrams/cloud%20computing%20ec2.png)
 
 **The Key Pieces:**
 - **Compute Layer:** EC2 instances spread across multiple AZs for reliability
@@ -63,9 +63,9 @@ Honestly, getting comfortable with this architecture is half the battle when you
 
 ### Network & Security Configuration
 
-<p align="center">
+[<p align="center">
   <img src="../assets/diagrams/screencapture-labs-vocareum-main-main-php-2025-11-09-09_22_53.png" alt="Security Group Configuration" width="75%"/>
-</p>
+</p>](https://raw.githubusercontent.com/leroym-biz/AWS-restart-journey/main/assets/diagrams/screencapture-labs-vocareum-main-main-php-2025-11-09-09_22_53.png)
 
 #### Security Group Rules
 
@@ -132,17 +132,17 @@ Once you start thinking in terms of automation, you never want to click through 
 
 ### System Boot Verification
 
-<p align="center">
+[<p align="center">
   <img src="../assets/diagrams/image_7e48a8.png" alt="Amazon Linux 2023 Boot Sequence" width="60%"/>
-</p>
+</p>](https://raw.githubusercontent.com/leroym-biz/AWS-restart-journey/main/assets/diagrams/screencapture-labs-vocareum-main-main-php-2025-11-09-09_22_53.png)
 
 The instance boots up clean, confirming everything's working as expected.
 
 ### Security Architecture
 
-<p align="center">
+[<p align="center">
   <img src="../assets/diagrams/image_7e406a.png" alt="EC2 Security Group Architecture" width="70%"/>
-</p>
+</p>](https://raw.githubusercontent.com/leroym-biz/AWS-restart-journey/main/assets/diagrams/screencapture-labs-vocareum-main-main-php-2025-11-09-09_22_53.png)
 
 **Defense-in-Depth Strategy:**
 1. **Network ACLs** — Subnet-level filtering (your outer perimeter)
