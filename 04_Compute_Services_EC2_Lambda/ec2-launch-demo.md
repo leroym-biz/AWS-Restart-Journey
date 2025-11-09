@@ -19,10 +19,10 @@
 
 This lab is pretty straightforward but covers the essentials: I spun up an **Amazon EC2 instance** and configured it to run a simple Apache web server.
 
-The real point here wasn't just getting a server online—it was doing it the right way:  
-✅ **Automated setup** using User Data scripts (no manual SSH needed)  
-✅ **Security-first thinking** with proper Security Group configuration  
-✅ **Cost-conscious design** using Free Tier resources  
+The real point here wasn't just getting a server online—it was doing it the right way:
+✅ **Automated setup** using User Data scripts (no manual SSH needed)
+✅ **Security-first thinking** with proper Security Group configuration
+✅ **Cost-conscious design** using Free Tier resources
 ✅ **High availability patterns** with multi-AZ architecture
 
 **Tech Stack:** AWS EC2, Amazon Linux 2023, Apache HTTP Server, Bash scripting
