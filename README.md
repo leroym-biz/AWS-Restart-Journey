@@ -25,7 +25,7 @@ My documentation follows the full curriculum, but the real emphasis is on the st
 
 ---
 
-## 💡 Projects I Built (Folder 99)
+## 💡 Projects I Built (Portfolio_Projects)
 
 This is the good stuff—where the theory had to turn into working code.  
 These aren't simple "Hello World" labs; they're multi-service challenges designed to replicate real-world architectural headaches.  
