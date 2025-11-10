@@ -1,0 +1,414 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "VPC Design: Production-ready multi-tier network architecture with public and private subnets across multiple Availability Zones. Demonstrates secure network isolation, IP address allocation, and defense-in-depth security principles."
+
+# This section allows customization without editing the core stack
+Parameters:
+  ProjectName:
+    Type: String
+    Default: VPC-Design-Demo
+    Description: Name to tag all resources for identification and cost tracking.
+  
+  EnvironmentType:
+    Type: String
+    Default: Development
+    AllowedValues:
+      - Development
+      - Staging
+      - Production
+    Description: Environment type affects resource sizing and configuration.
+
+Resources:
+  # 1. VPC (Virtual Private Cloud)
+  # Rationale: Uses 10.0.0.0/16 CIDR block providing 65,536 IPs for scalability and growth.
+  # This follows AWS best practices for enterprise VPC design.
+  DemoVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-VPC"
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  # 2. Internet Gateway (Public Connectivity)
+  # Rationale: Required for public subnet internet access. This is the connection point
+  # that allows resources in public subnets to communicate with the internet.
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-IGW"
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  # 3. Attach IGW to VPC
+  # Rationale: The Internet Gateway must be attached to the VPC before it can be used.
+  AttachGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref DemoVPC
+      InternetGatewayId: !Ref InternetGateway
+
+  # 4. Public Subnet 1 (Web Tier - AZ 1)
+  # Rationale: Uses 10.0.1.0/24 providing 251 usable IPs for web servers and load balancers.
+  # MapPublicIpOnLaunch ensures instances get public IPs automatically.
+  PublicSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref DemoVPC
+      CidrBlock: 10.0.1.0/24
+      AvailabilityZone: !Select [0, !GetAZs ""]
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-PublicSubnet-1a"
+        - Key: Type
+          Value: Public
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  # 5. Public Subnet 2 (Web Tier - AZ 2)
+  # Rationale: Second AZ for high availability. Load balancers require subnets in 2+ AZs.
+  PublicSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref DemoVPC
+      CidrBlock: 10.0.2.0/24
+      AvailabilityZone: !Select [1, !GetAZs ""]
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-PublicSubnet-1b"
+        - Key: Type
+          Value: Public
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  # 6. Private Subnet 1 (Application Tier - AZ 1)
+  # Rationale: Uses 10.0.11.0/24 for application servers. No direct internet access.
+  # Isolated from public internet for security - demonstrates network isolation principles.
+  PrivateSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref DemoVPC
+      CidrBlock: 10.0.11.0/24
+      AvailabilityZone: !Select [0, !GetAZs ""]
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-PrivateSubnet-1a"
+        - Key: Type
+          Value: Private
+        - Key: Tier
+          Value: Application
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  # 7. Private Subnet 2 (Application Tier - AZ 2)
+  # Rationale: Second private subnet for high availability and fault tolerance.
+  PrivateSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref DemoVPC
+      CidrBlock: 10.0.12.0/24
+      AvailabilityZone: !Select [1, !GetAZs ""]
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-PrivateSubnet-1b"
+        - Key: Type
+          Value: Private
+        - Key: Tier
+          Value: Application
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  # 8. Private Subnet 3 (Database Tier - AZ 1)
+  # Rationale: Uses 10.0.21.0/24 for database servers. Maximum isolation for sensitive data.
+  # Separate subnet for database tier follows defense-in-depth security principles.
+  DatabaseSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref DemoVPC
+      CidrBlock: 10.0.21.0/24
+      AvailabilityZone: !Select [0, !GetAZs ""]
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-DatabaseSubnet-1a"
+        - Key: Type
+          Value: Private
+        - Key: Tier
+          Value: Database
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  # 9. Private Subnet 4 (Database Tier - AZ 2)
+  # Rationale: Second database subnet required for RDS Multi-AZ deployments.
+  DatabaseSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref DemoVPC
+      CidrBlock: 10.0.22.0/24
+      AvailabilityZone: !Select [1, !GetAZs ""]
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-DatabaseSubnet-1b"
+        - Key: Type
+          Value: Private
+        - Key: Tier
+          Value: Database
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  # 10. Public Route Table & Internet Route
+  # Rationale: Route 0.0.0.0/0 points to IGW, making this the public route table.
+  # Any subnet associated with this route table becomes internet-accessible.
+  PublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref DemoVPC
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-PublicRouteTable"
+        - Key: Type
+          Value: Public
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  PublicInternetRoute:
+    Type: AWS::EC2::Route
+    DependsOn: AttachGateway
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+
+  # 11. Associate Public Subnets with Public Route Table
+  PublicSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet1
+      RouteTableId: !Ref PublicRouteTable
+
+  PublicSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet2
+      RouteTableId: !Ref PublicRouteTable
+
+  # 12. Private Route Table (Network Isolation)
+  # Rationale: This route table does NOT have a route to the IGW.
+  # Private subnets remain isolated from direct internet access for security.
+  # Resources here can only communicate within the VPC or via NAT Gateway (if added).
+  PrivateRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref DemoVPC
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-PrivateRouteTable"
+        - Key: Type
+          Value: Private
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  # 13. Associate Private Subnets with Private Route Table
+  PrivateSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnet1
+      RouteTableId: !Ref PrivateRouteTable
+
+  PrivateSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnet2
+      RouteTableId: !Ref PrivateRouteTable
+
+  # 14. Database Route Table (Maximum Isolation)
+  # Rationale: Separate route table for database tier provides additional security layer.
+  # Databases should have the most restrictive network access.
+  DatabaseRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref DemoVPC
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-DatabaseRouteTable"
+        - Key: Type
+          Value: Private
+        - Key: Tier
+          Value: Database
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  # 15. Associate Database Subnets with Database Route Table
+  DatabaseSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref DatabaseSubnet1
+      RouteTableId: !Ref DatabaseRouteTable
+
+  DatabaseSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref DatabaseSubnet2
+      RouteTableId: !Ref DatabaseRouteTable
+
+  # 16. Web Server Security Group
+  # Rationale: Controls inbound traffic to web servers. Allows HTTP/HTTPS from anywhere,
+  # following the principle of least privilege while enabling public web access.
+  WebServerSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupName: !Sub "${ProjectName}-WebServer-SG"
+      GroupDescription: Security group for public web servers - allows HTTP/HTTPS traffic
+      VpcId: !Ref DemoVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+          Description: Allow HTTP from anywhere
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+          Description: Allow HTTPS from anywhere
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+          Description: Allow all outbound traffic
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-WebServer-SG"
+        - Key: Tier
+          Value: Web
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  # 17. Application Server Security Group
+  # Rationale: Application servers only accept traffic from web tier.
+  # Demonstrates defense-in-depth: even if someone reaches private subnet, SG blocks them.
+  AppServerSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupName: !Sub "${ProjectName}-AppServer-SG"
+      GroupDescription: Security group for application servers - only accepts traffic from web tier
+      VpcId: !Ref DemoVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 8080
+          ToPort: 8080
+          SourceSecurityGroupId: !Ref WebServerSecurityGroup
+          Description: Allow app traffic from web servers only
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+          Description: Allow all outbound traffic
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-AppServer-SG"
+        - Key: Tier
+          Value: Application
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+  # 18. Database Security Group
+  # Rationale: Database only accepts connections from application tier.
+  # Maximum isolation - no direct access from web tier or internet.
+  DatabaseSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupName: !Sub "${ProjectName}-Database-SG"
+      GroupDescription: Security group for database servers - only accepts traffic from application tier
+      VpcId: !Ref DemoVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 3306
+          ToPort: 3306
+          SourceSecurityGroupId: !Ref AppServerSecurityGroup
+          Description: Allow MySQL/RDS traffic from app servers only
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+          Description: Allow all outbound traffic
+      Tags:
+        - Key: Name
+          Value: !Sub "${ProjectName}-Database-SG"
+        - Key: Tier
+          Value: Database
+        - Key: Environment
+          Value: !Ref EnvironmentType
+
+Outputs:
+  # Displays key information after successful deployment for easy reference
+  VPCId:
+    Description: The ID of the VPC - use this to launch resources into this network
+    Value: !Ref DemoVPC
+    Export:
+      Name: !Sub "${ProjectName}-VPC-ID"
+
+  VPCCidrBlock:
+    Description: The CIDR block of the VPC
+    Value: !GetAtt DemoVPC.CidrBlock
+
+  PublicSubnet1Id:
+    Description: Public Subnet 1 (AZ 1) - for web servers and load balancers
+    Value: !Ref PublicSubnet1
+    Export:
+      Name: !Sub "${ProjectName}-PublicSubnet1-ID"
+
+  PublicSubnet2Id:
+    Description: Public Subnet 2 (AZ 2) - for high availability
+    Value: !Ref PublicSubnet2
+    Export:
+      Name: !Sub "${ProjectName}-PublicSubnet2-ID"
+
+  PrivateSubnet1Id:
+    Description: Private Subnet 1 (AZ 1) - for application servers
+    Value: !Ref PrivateSubnet1
+    Export:
+      Name: !Sub "${ProjectName}-PrivateSubnet1-ID"
+
+  PrivateSubnet2Id:
+    Description: Private Subnet 2 (AZ 2) - for application servers
+    Value: !Ref PrivateSubnet2
+    Export:
+      Name: !Sub "${ProjectName}-PrivateSubnet2-ID"
+
+  DatabaseSubnet1Id:
+    Description: Database Subnet 1 (AZ 1) - for RDS and database servers
+    Value: !Ref DatabaseSubnet1
+    Export:
+      Name: !Sub "${ProjectName}-DatabaseSubnet1-ID"
+
+  DatabaseSubnet2Id:
+    Description: Database Subnet 2 (AZ 2) - for RDS Multi-AZ
+    Value: !Ref DatabaseSubnet2
+    Export:
+      Name: !Sub "${ProjectName}-DatabaseSubnet2-ID"
+
+  WebServerSecurityGroupId:
+    Description: Security Group ID for web servers
+    Value: !Ref WebServerSecurityGroup
+    Export:
+      Name: !Sub "${ProjectName}-WebServer-SG-ID"
+
+  AppServerSecurityGroupId:
+    Description: Security Group ID for application servers
+    Value: !Ref AppServerSecurityGroup
+    Export:
+      Name: !Sub "${ProjectName}-AppServer-SG-ID"
+
+  DatabaseSecurityGroupId:
+    Description: Security Group ID for database servers
+    Value: !Ref DatabaseSecurityGroup
+    Export:
+      Name: !Sub "${ProjectName}-DatabaseSG-ID"
+
+  InternetGatewayId:
+    Description: The ID of the Internet Gateway
+    Value: !Ref InternetGateway
