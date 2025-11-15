@@ -198,12 +198,13 @@ This is part of my **AWS Restart Journey**, a three-month focused portfolio docu
 If you're looking for someone who's serious about learning AWS the right way—hands-on, documented, and grounded in real-world architecture—let's talk.
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/leroym-biz" target="_blank">
-    <img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-blue?style=for-the-badge&logo=linkedin" />
-  </a>
   <a href="mailto:leroym.biz@gmail.com">
-    <img src="https://img.shields.io/badge/Email%20Me-grey?style=for-the-badge&logo=gmail" />
+    <img src="https://img.shields.io/badge/Email-leroym.biz@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
+  <a href="https://api.whatsapp.com/send/?phone=27605665116&text=Hi%20Leroy,%20saw%20your%20GitHub!" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-%2B27%2060%20566%205116-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
+  </a>
+</p>
   <a href="https://github.com/leroym-biz/AWS-restart-journey" target="_blank">
     <img src="https://img.shields.io/badge/View%20Repository-black?style=for-the-badge&logo=github" />
   </a>
