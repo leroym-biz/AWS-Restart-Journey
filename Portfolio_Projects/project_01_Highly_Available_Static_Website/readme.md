@@ -1,30 +1,16 @@
-\# 🍽️ Embers \& Co: Crafting a Digital Experience with AWS
+# 🍽️ Embers & Co: Crafting a Digital Experience with AWS
 
-
-
-> \*\*From manual chaos to cloud precision—solving real business problems with AWS architecture.\*\*
-
-
+> **From manual chaos to cloud precision—solving real business problems with AWS architecture.**
 
 ---
 
+## 📋 What's Inside
 
-
-\## 📋 What's Inside
-
-
-
-\- \[What I Built Here](#what-i-built-here)
-
-\- \[Architecture Overview](#architecture-overview)
-
-\- \[Implementation Journey](#implementation-journey)
-
-\- \[Security \& Verification](#security--verification)
-
-\- \[What I Learned](#what-i-learned)
-
-
+- [What I Built Here](#what-i-built-here)
+- [Architecture Overview](#architecture-overview)
+- [Implementation Journey](#implementation-journey)
+- [Security & Verification](#security--verification)
+- [What I Learned](#what-i-learned)
 
 ---
 
@@ -34,10 +20,10 @@ This project solved a **real problem** for **Embers & Co**, a popular Melville r
 
 The reality is, success creates chaos when your systems can't scale. Manual processes that worked for 20 customers break down at 100+.
 
-I focused on:
-✅ **Building a fully functional static website** with booking capabilities
-✅ **Architecting a serverless backend** ready for dynamic processing
-✅ **Securing AWS infrastructure** with proper IAM policies
+I focused on:  
+✅ **Building a fully functional static website** with booking capabilities  
+✅ **Architecting a serverless backend** ready for dynamic processing  
+✅ **Securing AWS infrastructure** with proper IAM policies  
 ✅ **Presenting the business case** to stakeholders in their language (ROI, not tech specs)
 
 **Tech Stack:** Amazon S3, CloudFront, Route 53, IAM, Business Consulting
@@ -192,7 +178,7 @@ The real power comes from CloudFront. I created a distribution pulling from the 
 | **Default Root Object** | index.html | Handles root URL requests |
 | **Viewer Protocol** | Redirect HTTP to HTTPS | Security best practice |
 
-**Distribution ARN:** `arn:aws:cloudfront::986341372302:distribution/E37FXO5EHONN63`
+**Distribution ARN:** `arn:aws:cloudfront::986341372302:distribution/E37FXO5EHONN63`  
 **Status:** Deployed across 450+ edge locations globally
 
 **Why website endpoint vs. bucket endpoint?** The S3 website endpoint properly handles index documents and error pages—critical for single-page application routing.
@@ -450,69 +436,39 @@ This is part of my **AWS Restart Journey**, a three-month focused portfolio docu
 
 I'm building real projects, not just following tutorials. The goal is to prove I can actually build things, not just pass exams.
 
-
-
-\*\*Project Deliverables:\*\*
-
-\- ✅ Fully functional static website (live at ember-co.netlify.app)
-
-\- ✅ AWS infrastructure (S3, CloudFront, IAM policies)
-
-\- ✅ PowerPoint presentation with business case
-
-\- ✅ 7-week migration roadmap
-
-\- ✅ Complete technical documentation
-
-
+**Project Deliverables:**
+- ✅ Fully functional static website (live at ember-co.netlify.app)
+- ✅ AWS infrastructure (S3, CloudFront, IAM policies)
+- ✅ PowerPoint presentation with business case
+- ✅ 7-week migration roadmap
+- ✅ Complete technical documentation
 
 ---
 
 ## 🤝 Let's Connect
 
-If you're looking for someone who understands both the `s3:GetObject` policy syntax \*\*and\*\* the business impact of eliminating double-bookings—let's talk.
-
-
+If you're looking for someone who understands both the `s3:GetObject` policy syntax **and** the business impact of eliminating double-bookings—let's talk.
 
 <p align="center">
-
-&nbsp; <a href="mailto:leroym.biz@gmail.com">
-
-&nbsp;   <img src="https://img.shields.io/badge/EMAIL-LEROYM.BIZ@GMAIL.COM-D14836?style=for-the-badge\&logo=gmail\&logoColor=white" alt="Email" />
-
-&nbsp; </a>
-
-&nbsp; <a href="https://api.whatsapp.com/send/?phone=27605665116\&text=Hi%20Leroy,%20saw%20your%20GitHub!" target="\_blank">
-
-&nbsp;   <img src="https://img.shields.io/badge/WHATSAPP-%2B27%2060%20566%205116-25D366?style=for-the-badge\&logo=whatsapp\&logoColor=white" alt="WhatsApp" />
-
-&nbsp; </a>
-
+  <a href="mailto:leroym.biz@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL-LEROYM.BIZ@GMAIL.COM-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+  <a href="https://api.whatsapp.com/send/?phone=27605665116&text=Hi%20Leroy,%20saw%20your%20GitHub!" target="_blank">
+    <img src="https://img.shields.io/badge/WHATSAPP-%2B27%2060%20566%205116-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
+  </a>
 </p>
 
-
-
 <p align="center">
-
-&nbsp; <a href="https://github.com/leroym-biz/AWS-Restart-Journey" target="\_blank">
-
-&nbsp;   <img src="https://img.shields.io/badge/VIEW%20REPOSITORY-black?style=for-the-badge\&logo=github\&logoColor=white" alt="View Repository" />
-
-&nbsp; </a>
-
+  <a href="https://github.com/leroym-biz/AWS-Restart-Journey" target="_blank">
+    <img src="https://img.shields.io/badge/VIEW%20REPOSITORY-black?style=for-the-badge&logo=github&logoColor=white" alt="View Repository">
+  </a>
 </p>
 
 ---
 
 <p align="center">
-
-&nbsp; <img src="https://img.shields.io/badge/Status-Project%20Complete-success?style=flat-square" />
-
-&nbsp; <img src="https://img.shields.io/badge/Focus-Hands--On%20Consulting-brightgreen?style=flat-square" />
-
+  <img src="https://img.shields.io/badge/Status-Project%20Complete-success?style=flat-square">
+  <img src="https://img.shields.io/badge/Focus-Hands--On%20Consulting-brightgreen?style=flat-square">
 </p>
 
-
-
 <p align="center">🍽️ <strong>Built with AWS S3 • CloudFront • IAM • Route 53 • Business Acumen</strong> 🍽️</p>
-
