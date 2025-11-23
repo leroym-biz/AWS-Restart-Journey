@@ -1,4 +1,3 @@
-
 <!-- ========================= BADGES ========================= -->
 <p align="center">
   <img src="https://img.shields.io/badge/AWS%20Cloud%20Practitioner-In%20Progress-blue?style=for-the-badge&logo=amazonaws" />
@@ -6,6 +5,11 @@
   <img src="https://img.shields.io/badge/Python-Automation-green?style=for-the-badge&logo=python" />
   <img src="https://img.shields.io/badge/IaC-CloudFormation-yellow?style=for-the-badge&logo=awscloudformation" />
   <img src="https://img.shields.io/badge/Focus-Automation%20%7C%20Security%20%7C%20Scalability-lightgrey?style=for-the-badge" />
+</p>
+
+<!-- ========================= HEADER IMAGE ========================= -->
+<p align="center">
+  <img src="Lab_Assets/screenshots/AWS Restart.png" alt="AWS Restart Journey Header" width="100%"/>
 </p>
 
 <h1 align="center">🚀 AWS Portfolio: Cloud Practitioner Certification & Advanced Projects (3-Month Log) ☁️</h1>
@@ -114,6 +118,8 @@ I update this every week until the program is done.
     <img src="https://img.shields.io/badge/WhatsApp-%2B27%2060%20566%205116-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
   </a>
 </p>
+
+<p align="center">
   <a href="https://github.com/leroym-biz/AWS-restart-journey" target="_blank">
     <img src="https://img.shields.io/badge/View%20Repository-black?style=for-the-badge&logo=github" />
   </a>
