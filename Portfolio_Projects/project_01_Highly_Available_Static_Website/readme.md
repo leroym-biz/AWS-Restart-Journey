@@ -886,63 +886,30 @@ I'm building real projects, not just following tutorials. The goal is to prove I
 
 \- ✅ Complete technical documentation
 
+---
 
+## 🤝 Let's Connect
+
+If you're looking for someone who's serious about learning AWS the right way—hands-on, documented, and grounded in real-world architecture—let's talk.
+
+<p align="center">
+  <a href="mailto:leroym.biz@gmail.com">
+    <img src="https://img.shields.io/badge/Email-leroym.biz@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://api.whatsapp.com/send/?phone=27605665116&text=Hi%20Leroy,%20saw%20your%20GitHub!" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-%2B27%2060%20566%205116-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
+  </a>
+</p>
+  <a href="https://github.com/leroym-biz/AWS-restart-journey" target="_blank">
+    <img src="https://img.shields.io/badge/View%20Repository-black?style=for-the-badge&logo=github" />
+  </a>
+</p>
 
 ---
 
-
-
-\## 🤝 Let's Connect
-
-
-
-If you're looking for someone who understands both the `s3:GetObject` policy syntax \*\*and\*\* the business impact of eliminating double-bookings—let's talk.
-
-
-
 <p align="center">
-
-&nbsp; <a href="mailto:leroym.biz@gmail.com">
-
-&nbsp;   <img src="https://img.shields.io/badge/EMAIL-LEROYM.BIZ@GMAIL.COM-D14836?style=for-the-badge\&logo=gmail\&logoColor=white" alt="Email" />
-
-&nbsp; </a>
-
-&nbsp; <a href="https://api.whatsapp.com/send/?phone=27605665116\&text=Hi%20Leroy,%20saw%20your%20GitHub!" target="\_blank">
-
-&nbsp;   <img src="https://img.shields.io/badge/WHATSAPP-%2B27%2060%20566%205116-25D366?style=for-the-badge\&logo=whatsapp\&logoColor=white" alt="WhatsApp" />
-
-&nbsp; </a>
-
+  <img src="https://img.shields.io/badge/Status-Active%20Learning-success?style=flat-square" />
+  <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square" />
 </p>
 
-
-
-<p align="center">
-
-&nbsp; <a href="https://github.com/leroym-biz/AWS-Restart-Journey" target="\_blank">
-
-&nbsp;   <img src="https://img.shields.io/badge/VIEW%20REPOSITORY-black?style=for-the-badge\&logo=github\&logoColor=white" alt="View Repository" />
-
-&nbsp; </a>
-
-</p>
-
-
-
----
-
-
-
-<p align="center">
-
-&nbsp; <img src="https://img.shields.io/badge/Status-Project%20Complete-success?style=flat-square" />
-
-&nbsp; <img src="https://img.shields.io/badge/Focus-Hands--On%20Consulting-brightgreen?style=flat-square" />
-
-</p>
-
-
-
-<p align="center">🍽️ <strong>Built with AWS S3 • CloudFront • IAM • Route 53 • Business Acumen</strong> 🍽️</p>
-
+<h4 align="center">🌐 Built with AWS VPC • Route 53 • Internet Gateway • Real-World Scenarios 🌐</h4>
