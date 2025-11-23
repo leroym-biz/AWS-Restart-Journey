@@ -51,6 +51,16 @@ pwd
 # Output: /home/ec2-user
 ```
 
+### Terminal Access Confirmed
+
+Once connected, you'll see the Amazon Linux welcome screen confirming your session:
+
+<p align="center">
+  <img src="assets/screenshots/amazon-linux-terminal.png" alt="Amazon Linux 2023 Terminal Session" width="80%"/>
+</p>
+
+*Amazon Linux 2023 terminal showing successful EC2 Instance Connect session*
+
 ---
 
 ## Core Commands & Operations
@@ -264,6 +274,8 @@ If you're looking for someone who's serious about learning AWS the right way—h
     <img src="https://img.shields.io/badge/WhatsApp-%2B27%2060%20566%205116-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
   </a>
 </p>
+
+<p align="center">
   <a href="https://github.com/leroym-biz/AWS-restart-journey" target="_blank">
     <img src="https://img.shields.io/badge/View%20Repository-black?style=for-the-badge&logo=github" />
   </a>
