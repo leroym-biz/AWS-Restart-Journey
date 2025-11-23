@@ -1,4 +1,4 @@
-\# 🍽️ Embers \& Co: Crafting a Digital Experience with AWS
+# 🍽️ Embers \& Co: Crafting a Digital Experience with AWS
 
 
 
