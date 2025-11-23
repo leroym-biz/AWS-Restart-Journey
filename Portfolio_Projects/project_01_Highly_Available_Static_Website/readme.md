@@ -2,7 +2,7 @@
 
 
 
-> \*\*From manual chaos to cloud precision—solving real business problems with AWS architecture.\*\*
+> **From manual chaos to cloud precision—solving real business problems with AWS architecture.**
 
 
 
