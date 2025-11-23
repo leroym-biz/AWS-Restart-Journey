@@ -19,10 +19,10 @@
 
 This lab is pretty straightforward but covers the essentials: I spun up an **Amazon EC2 instance** and configured it to run a simple Apache web server.
 
-The real point here wasn't just getting a server online—it was doing it the right way:
-✅ **Automated setup** using User Data scripts (no manual SSH needed)
-✅ **Security-first thinking** with proper Security Group configuration
-✅ **Cost-conscious design** using Free Tier resources
+The real point here wasn't just getting a server online—it was doing it the right way:  
+✅ **Automated setup** using User Data scripts (no manual SSH needed)  
+✅ **Security-first thinking** with proper Security Group configuration  
+✅ **Cost-conscious design** using Free Tier resources  
 ✅ **High availability patterns** with multi-AZ architecture
 
 **Tech Stack:** AWS EC2, Amazon Linux 2023, Apache HTTP Server, Bash scripting
@@ -34,6 +34,12 @@ The real point here wasn't just getting a server online—it was doing it the ri
 ### How It's Built
 
 The EC2 instance lives inside a specific **Availability Zone (AZ)** and uses **Amazon EBS** for storage that sticks around even if the instance goes down. This setup follows the kind of resilient, multi-AZ patterns you see in production environments.
+
+<p align="center">
+  <img src="assets/screenshots/stabilizing system ec2 instance.png" alt="EC2 Architecture Diagram" width="80%"/>
+</p>
+
+*Multi-AZ EC2 architecture showing compute modules across availability zones with EBS storage*
 
 **The Key Pieces:**
 - **Compute Layer:** EC2 instances spread across multiple AZs for reliability
@@ -68,6 +74,12 @@ I followed the **principle of least privilege** here—only open what you absolu
 | Inbound | SSH | 22 | My IP / Lab CIDR | Lets me SSH in for admin tasks (optional) |
 | Inbound | HTTP | 80 | 0.0.0.0/0 | Opens the web server to the public internet |
 | Outbound | All | All | 0.0.0.0/0 | Lets the instance download updates and packages |
+
+<p align="center">
+  <img src="assets/screenshots/NetworkConfiguration.PNG" alt="Security Group Configuration" width="80%"/>
+</p>
+
+*Security Group configuration in AWS Console showing inbound and outbound rules*
 
 **Security Best Practices I Applied:**
 - 🔒 Limited SSH access to known IP ranges only
@@ -126,6 +138,12 @@ Once you start thinking in terms of automation, you never want to click through 
 
 The instance boots up clean, confirming everything's working as expected.
 
+<p align="center">
+  <img src="assets/screenshots/RunningEC2.PNG" alt="Running EC2 Instance" width="80%"/>
+</p>
+
+*EC2 instance running successfully in the AWS Console*
+
 ### Security Architecture
 
 **Defense-in-Depth Strategy:**
@@ -145,6 +163,12 @@ curl http://<EC2-PUBLIC-IP>
 # Expected output:
 # <h1>Hello from AWS EC2! This is a successful web server launch.</h1>
 ```
+
+<p align="center">
+  <img src="assets/screenshots/CWAgent Monitoring.PNG" alt="CloudWatch Monitoring" width="80%"/>
+</p>
+
+*CloudWatch Agent monitoring confirming the web server is live and healthy*
 
 If you see that HTML response, you're good to go.
 
@@ -191,6 +215,8 @@ Honestly, the best part about learning this stuff is realizing how much control 
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
+I'm building real projects, not just following tutorials. The goal is to prove I can actually build things, not just pass exams.
+
 ---
 
 ## 🤝 Let's Connect
@@ -205,6 +231,8 @@ If you're looking for someone who's serious about learning AWS the right way—h
     <img src="https://img.shields.io/badge/WhatsApp-%2B27%2060%20566%205116-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
   </a>
 </p>
+
+<p align="center">
   <a href="https://github.com/leroym-biz/AWS-restart-journey" target="_blank">
     <img src="https://img.shields.io/badge/View%20Repository-black?style=for-the-badge&logo=github" />
   </a>
