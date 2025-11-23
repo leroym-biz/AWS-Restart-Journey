@@ -86,7 +86,7 @@ Rather than just "hosting a website," I architected a \*\*true serverless soluti
 
 
 
-\*The foundation: Provisioning the S3 bucket in us-east-1\*
+<p align="center"><em>The foundation: Provisioning the S3 bucket in us-east-1</em></p>
 
 
 
@@ -180,7 +180,7 @@ First step: create the S3 bucket in \*\*US East (N. Virginia)\*\* for optimal Cl
 
 
 
-\*Uploading 71 assets (34MB)—every menu image, CSS animation, and JavaScript interaction\*
+<p align="center"><em>Uploading 71 assets (34MB)—every menu image, CSS animation, and JavaScript interaction</em></p>
 
 
 
@@ -224,7 +224,7 @@ For rapid development, I configured a temporary bucket policy granting public re
 
 
 
-\*Development policy: Quick public access for testing\*
+<p align="center"><em>Development policy: Quick public access for testing</em></p>
 
 
 
@@ -274,7 +274,7 @@ For rapid development, I configured a temporary bucket policy granting public re
 
 
 
-\*The S3 website endpoint goes live\*
+<p align="center"><em>The S3 website endpoint goes live</em></p>
 
 
 
@@ -326,7 +326,7 @@ The real power comes from CloudFront. I created a distribution pulling from the 
 
 
 
-\*Step 1: Selecting the S3 origin (note the website endpoint recommendation)\*
+<p align="center"><em>Step 1: Selecting the S3 origin (note the website endpoint recommendation)</em></p>
 
 
 
@@ -338,7 +338,7 @@ The real power comes from CloudFront. I created a distribution pulling from the 
 
 
 
-\*Distribution created: dbmubhcukpnv9.cloudfront.net\*
+<p align="center"><em>Distribution created: dbmubhcukpnv9.cloudfront.net</em></p>
 
 
 
@@ -392,7 +392,7 @@ Here's where architecture gets serious. Instead of leaving S3 public, I \*\*amen
 
 
 
-\*Production security: Only CloudFront can access S3 content\*
+<p align="center"><em>Production security: Only CloudFront can access S3 content</em></p>
 
 
 
@@ -484,7 +484,7 @@ Here's where architecture gets serious. Instead of leaving S3 public, I \*\*amen
 
 
 
-\*The landing page: "NOW BOOKING" hero section\*
+<p align="center"><em>The landing page: "NOW BOOKING" hero section</em></p>
 
 
 
@@ -526,7 +526,7 @@ The requirements demanded "images, videos, or animations to enhance design." Del
 
 
 
-\*Menu system: Tabbed navigation with professional food photography\*
+<p align="center"><em>Menu system: Tabbed navigation with professional food photography</em></p>
 
 
 
@@ -574,7 +574,7 @@ The core problem was "order mix-ups and double-bookings." The solution starts wi
 
 
 
-\*Booking form: Captures all necessary details without overwhelming the user\*
+<p align="center"><em>Booking form: Captures all necessary details without overwhelming the user</em></p>
 
 
 
@@ -614,7 +614,7 @@ The core problem was "order mix-ups and double-bookings." The solution starts wi
 
 
 
-\*Confirmation: Immediate feedback eliminates uncertainty\*
+<p align="center"><em>Confirmation: Immediate feedback eliminates uncertainty</em></p>
 
 
 
@@ -648,7 +648,7 @@ With 60%+ of restaurant bookings coming from mobile, responsiveness wasn't optio
 
 
 
-\*Mobile experience: Hamburger menu collapses cleanly, all content accessible\*
+<p align="center"><em>Mobile experience: Hamburger menu collapses cleanly, all content accessible</em></p>
 
 
 
@@ -904,13 +904,13 @@ If you're looking for someone who understands both the `s3:GetObject` policy syn
 
 &nbsp; <a href="mailto:leroym.biz@gmail.com">
 
-&nbsp;   <img src="https://img.shields.io/badge/Email-leroym.biz@gmail.com-D14836?style=for-the-badge\&logo=gmail\&logoColor=white" alt="Email" />
+&nbsp;   <img src="https://img.shields.io/badge/EMAIL-LEROYM.BIZ@GMAIL.COM-D14836?style=for-the-badge\&logo=gmail\&logoColor=white" alt="Email" />
 
 &nbsp; </a>
 
 &nbsp; <a href="https://api.whatsapp.com/send/?phone=27605665116\&text=Hi%20Leroy,%20saw%20your%20GitHub!" target="\_blank">
 
-&nbsp;   <img src="https://img.shields.io/badge/WhatsApp-%2B27%2060%20566%205116-25D366?style=for-the-badge\&logo=whatsapp\&logoColor=white" alt="WhatsApp" />
+&nbsp;   <img src="https://img.shields.io/badge/WHATSAPP-%2B27%2060%20566%205116-25D366?style=for-the-badge\&logo=whatsapp\&logoColor=white" alt="WhatsApp" />
 
 &nbsp; </a>
 
@@ -922,7 +922,7 @@ If you're looking for someone who understands both the `s3:GetObject` policy syn
 
 &nbsp; <a href="https://github.com/leroym-biz/AWS-Restart-Journey" target="\_blank">
 
-&nbsp;   <img src="https://img.shields.io/badge/View%20Repository-black?style=for-the-badge\&logo=github" />
+&nbsp;   <img src="https://img.shields.io/badge/VIEW%20REPOSITORY-black?style=for-the-badge\&logo=github\&logoColor=white" alt="View Repository" />
 
 &nbsp; </a>
 
@@ -944,5 +944,5 @@ If you're looking for someone who understands both the `s3:GetObject` policy syn
 
 
 
-<h4 align="center">🍽️ Built with AWS S3 • CloudFront • IAM • Route 53 • Business Acumen 🍽️</h4>
+<p align="center">🍽️ <strong>Built with AWS S3 • CloudFront • IAM • Route 53 • Business Acumen</strong> 🍽️</p>
 
