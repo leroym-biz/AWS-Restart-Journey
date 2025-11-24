@@ -152,7 +152,7 @@ In production, you'd investigate immediately—check running processes, review I
 #### CloudWatch Metrics Dashboard
 
 <p align="center">
-  <img src="assets/screenshots/Metric_Graph_with_60%_Alarm_Threshold.png" alt="CloudWatch Metric Graph" width="80%">
+  <img src="assets/screenshots/Metric_Graph_with_Alarm_Threshold.png" alt="CloudWatch Metric Graph" width="80%">
 </p>
 
 <p align="center"><em>CPU utilization metric showing spike above 60% threshold triggering the alarm</em></p>
