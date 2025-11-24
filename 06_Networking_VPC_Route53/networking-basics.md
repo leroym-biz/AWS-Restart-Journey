@@ -1,5 +1,7 @@
 # 🌐 AWS Networking Basics: VPC, Subnets, and IP Addressing
 
+<p align="center"> <img src="assets/screenshots/route53-diagram.png" alt="AWS Database Architecture" width="100%"> </p>
+
 > **Understanding how networks work in AWS—the invisible infrastructure that makes everything connect.**
 
 ---

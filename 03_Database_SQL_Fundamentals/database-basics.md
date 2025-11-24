@@ -47,6 +47,10 @@ Honestly, getting comfortable with when to use each type is half the battle when
 
 ## AWS Database Services
 
+<p align="center">
+  <img src="assets/screenshots/rds-schema-diagram.png" alt="AWS Database Architecture" width="100%">
+</p>
+
 ### Database Configuration Comparison
 
 | Database Type | Structure | AWS Service | Common Use Case |
