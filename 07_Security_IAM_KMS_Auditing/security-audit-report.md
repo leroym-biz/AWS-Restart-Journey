@@ -79,8 +79,6 @@ Honestly, getting comfortable with monitoring patterns is half the battle when s
 </p>
 <p align="center"><em>CloudWatch alarm configured with 60% CPU threshold over 2 consecutive 1-minute periods</em></p>
 
-<p align="center"><em>CloudWatch alarm configured with 60% CPU threshold over 2 consecutive 1-minute periods</em></p>
-
 **Security Best Practices Applied:**
 - 🔒 Threshold tuned to detect anomalies without excessive false positives
 - 🔒 SNS topic restricted to authorized subscribers only
