@@ -75,8 +75,9 @@ Honestly, getting comfortable with monitoring patterns is half the battle when s
 | **Instance** | Target EC2 instance (Lab environment) | Monitored production workload |
 
 <p align="center">
-<img src="assets/screenshots/07_Cloudwatch Dashboard Overview.png" alt="CloudWatch Monitoring Dashboard Overview" width="90%"/>
+  <img src="assets/screenshots/CloudWatch_Alarm_Threshold_Configuration%20(CPU%20greater%20than%2060%20percent).png" alt="CloudWatch Alarm Configuration" width="80%">
 </p>
+<p align="center"><em>CloudWatch alarm configured with 60% CPU threshold over 2 consecutive 1-minute periods</em></p>
 
 <p align="center"><em>CloudWatch alarm configured with 60% CPU threshold over 2 consecutive 1-minute periods</em></p>
 
