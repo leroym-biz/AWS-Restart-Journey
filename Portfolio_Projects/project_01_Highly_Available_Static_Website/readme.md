@@ -1,4 +1,4 @@
-# 🍽️ Embers & Co: Crafting a Digital Experience with AWS
+# 🍽️ Ember & Co: Crafting a Digital Experience with AWS
 
 > **From manual chaos to cloud precision—solving real business problems with AWS architecture.**
 
@@ -16,7 +16,7 @@
 
 ## What I Built Here
 
-This project solved a **real problem** for **Embers & Co**, a popular Melville restaurant with 100+ daily customers and a 25% profit margin. Their manual booking system was causing double-bookings, lost reservations, and frustrated staff.
+This project solved a **real problem** for **Ember & Co**, a popular Melville restaurant with 100+ daily customers and a 25% profit margin. Their manual booking system was causing double-bookings, lost reservations, and frustrated staff.
 
 The reality is, success creates chaos when your systems can't scale. Manual processes that worked for 20 customers break down at 100+.
 
@@ -430,7 +430,7 @@ This project proved I can build AWS infrastructure **and** explain why it matter
 
 ---
 
-## 📝 Project Status
+## 📊 Project Status
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
