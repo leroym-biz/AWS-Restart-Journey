@@ -2,6 +2,12 @@
 
 > **From manual chaos to cloud precision—solving real business problems with AWS architecture.**
 
+<!-- ========================= HEADER IMAGE ========================= -->
+<p align="center">
+  <img src="assets/screenshots/project-header.png" alt="Project_01 Header" width="100%"/>
+</p>
+
+<h1 align="center">🚀 AWS Portfolio: Highly Available Static Website Project ☁️</h1>
 ---
 
 ## 📋 What's Inside
