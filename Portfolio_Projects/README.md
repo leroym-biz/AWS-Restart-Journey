@@ -37,11 +37,9 @@ I'm not just spinning up resources and calling it a day. I'm designing solutions
 
 ### Project 01: Embers & Co - Static Website Hosting
 
-<p align="center">
   <img src="https://img.shields.io/badge/Status-Complete-success?style=flat-square">
   <img src="https://img.shields.io/badge/AWS-S3%20%7C%20CloudFront%20%7C%20Route53-orange?style=flat-square">
   <img src="https://img.shields.io/badge/Focus-Serverless%20Web%20Hosting-blue?style=flat-square">
-</p>
 
 **The Problem:** A Melville restaurant with 100+ daily customers suffering from manual booking chaos—double-bookings, lost reservations, frustrated staff, and revenue loss.
 
