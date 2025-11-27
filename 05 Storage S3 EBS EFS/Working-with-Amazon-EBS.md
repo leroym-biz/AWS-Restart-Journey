@@ -205,7 +205,7 @@ Snapshots are incremental backups stored in S3. They're your disaster recovery s
 *Creating a snapshot from the "My Volume" EBS volume*
 
 <p align="center">
-  <img src="assets/screenshots/snapshot_successfully_created.png" alt="Snapshot Created Successfully" width="80%"/>
+  <img src="assets/screenshots/snapshot_succesfully_created.png" alt="Snapshot Created Successfully" width="80%"/>
 </p>
 
 *Snapshot status changes from "Pending" to "Completed"—backup is now stored in S3*
