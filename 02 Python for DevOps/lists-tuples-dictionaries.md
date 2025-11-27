@@ -38,7 +38,7 @@ The real point here wasn't just syntax memorization—it was understanding when 
 4. Click **Open IDE**
 
 <p align="center">
-  <img src="assets/screenshots/01_cloud9_open.png" alt="AWS Cloud9 IDE Environment" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/01_cloud9_open.png" alt="AWS Cloud9 IDE Environment" width="80%"/>
 </p>
 
 *AWS Cloud9 IDE ready for Python development*
