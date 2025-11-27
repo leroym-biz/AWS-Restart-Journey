@@ -1,7 +1,7 @@
 # 🚀 Portfolio Projects: Real-World AWS Solutions
 
 <p align="center">
-  <img src="../Lab_Assets/screenshots/Project_folder_header.png" alt="AWS Portfolio Projects Header" width="100%">
+  <img src="../Lab Assets/screenshots/Project_folder_header.png" alt="AWS Portfolio Projects Header" width="100%">
 </p>
 
 > **Building production-grade AWS solutions—the kind of projects that demonstrate real cloud architecture skills.**
