@@ -38,7 +38,7 @@ The real point here wasn't just syntax memorization—it was understanding when 
 4. Click **Open IDE**
 
 <p align="center">
-  <img src="assets/screenshots/01_cloud9_open.png" alt="AWS Cloud9 IDE Environment" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/01_cloud9_open.png" alt="AWS Cloud9 IDE Environment" width="80%"/>
 </p>
 
 *AWS Cloud9 IDE ready for Python development*
@@ -55,7 +55,7 @@ File → New From Template → Python File
 ```
 
 <p align="center">
-  <img src="assets/screenshots/02_collections_file_created.png" alt="Python File Created" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/02_collections_file_created.png" alt="Python File Created" width="80%"/>
 </p>
 
 *Python exercise file created in Cloud9 workspace*
@@ -69,7 +69,7 @@ pwd
 ```
 
 <p align="center">
-  <img src="assets/screenshots/03_open_terminal.png" alt="Terminal Session" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/03_open_terminal.png" alt="Terminal Session" width="80%"/>
 </p>
 
 *Terminal session confirming working directory*
@@ -90,7 +90,7 @@ print(type(myFruitList))
 ```
 
 <p align="center">
-  <img src="assets/screenshots/04_defining_a_list.png" alt="Defining a List" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/04_defining_a_list.png" alt="Defining a List" width="80%"/>
 </p>
 
 *Defining and printing a list with type verification*
@@ -112,7 +112,7 @@ print(myFruitList[2])  # Output: cherry
 ```
 
 <p align="center">
-  <img src="assets/screenshots/05_list_by_position.png" alt="Accessing List by Position" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/05_list_by_position.png" alt="Accessing List by Position" width="80%"/>
 </p>
 
 *Accessing individual list elements by index*
@@ -128,7 +128,7 @@ print(myFruitList)
 ```
 
 <p align="center">
-  <img src="assets/screenshots/06_changing_list_value.png" alt="Changing List Values" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/06_changing_list_value.png" alt="Changing List Values" width="80%"/>
 </p>
 
 *Modifying a list element—cherry becomes orange*
@@ -149,7 +149,7 @@ print(type(myFinalAnswerTuple))
 ```
 
 <p align="center">
-  <img src="assets/screenshots/07_defining_a_tuple.png" alt="Defining a Tuple" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/07_defining_a_tuple.png" alt="Defining a Tuple" width="80%"/>
 </p>
 
 *Defining an immutable tuple*
@@ -169,7 +169,7 @@ print(myFinalAnswerTuple[2])  # Output: pineapple
 ```
 
 <p align="center">
-  <img src="assets/screenshots/08_accessing_tuple_position.png" alt="Accessing Tuple by Position" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/08_accessing_tuple_position.png" alt="Accessing Tuple by Position" width="80%"/>
 </p>
 
 *Accessing tuple elements by index*
@@ -194,7 +194,7 @@ print(type(myFavoriteFruitDictionary))
 ```
 
 <p align="center">
-  <img src="assets/screenshots/09_defining_a_dictionary.png" alt="Defining a Dictionary" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/09_defining_a_dictionary.png" alt="Defining a Dictionary" width="80%"/>
 </p>
 
 *Defining a dictionary with named keys*
@@ -214,7 +214,7 @@ print(myFavoriteFruitDictionary["Paulo"])    # Output: pineapple
 ```
 
 <p align="center">
-  <img src="assets/screenshots/10_accessing_dictionary_by_key.png" alt="Accessing Dictionary by Key" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/10_accessing_dictionary_by_key.png" alt="Accessing Dictionary by Key" width="80%"/>
 </p>
 
 *Accessing dictionary values using keys*
@@ -232,19 +232,19 @@ python3 collections.py
 ```
 
 <p align="center">
-  <img src="assets/screenshots/11_python_version.png" alt="Python Version Check" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/11_python_version.png" alt="Python Version Check" width="80%"/>
 </p>
 
 *Verifying Python version and executing the script*
 
 <p align="center">
-  <img src="assets/screenshots/12_running_collections_script.png" alt="Running Collections Script" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/12_running_collections_script.png" alt="Running Collections Script" width="80%"/>
 </p>
 
 *Complete script execution showing all collection types*
 
 <p align="center">
-  <img src="assets/screenshots/13_selecting_python_interpreter.png" alt="Selecting Python Interpreter" width="80%"/>
+  <img src="assets/screenshots/lists,tuples and dictionaries/13_selecting_python_interpreter.png" alt="Selecting Python Interpreter" width="80%"/>
 </p>
 
 *Cloud9 Python interpreter selection*
