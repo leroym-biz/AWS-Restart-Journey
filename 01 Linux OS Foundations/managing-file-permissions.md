@@ -65,12 +65,6 @@ When you run `ls -l`, you see permission strings like this:
 - `r-x` — Group permissions (read, no write, execute)
 - `r--` — Others permissions (read only)
 
-<p align="center">
-  <img src="assets/screenshots/amazon-linux-terminal.png" alt="Amazon Linux Terminal" width="80%"/>
-</p>
-
-*Amazon Linux terminal showing file permissions with ls -l command*
-
 Honestly, once you understand this format, managing permissions becomes second nature.
 
 ---
