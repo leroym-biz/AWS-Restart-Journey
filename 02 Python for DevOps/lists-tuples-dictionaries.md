@@ -1,10 +1,10 @@
-# 🐍 Working with Lists, Tuples, and Dictionaries
+# 🐲 Working with Lists, Tuples, and Dictionaries
 
 > **Mastering Python data collections—the foundation of data manipulation and automation.**
 
 ---
 
-## 📋 What's Inside
+## 📜 What's Inside
 
 - [What I Built Here](#what-i-built-here)
 - [Lab Environment Setup](#lab-environment-setup)
@@ -18,10 +18,10 @@
 This lab covered Python's three fundamental collection types: lists, tuples, and dictionaries. These aren't just data structures—they're the building blocks of every Python automation script you'll ever write.
 
 The real point here wasn't just syntax memorization—it was understanding when to use each collection type:  
-✅ **Lists** for mutable, ordered data that changes  
-✅ **Tuples** for immutable, ordered data that stays fixed  
-✅ **Dictionaries** for key-value pairs with named access  
-✅ **Practical applications** in real-world automation scenarios
+✨ **Lists** for mutable, ordered data that changes  
+🔥 **Tuples** for immutable, ordered data that stays fixed  
+💎 **Dictionaries** for key-value pairs with named access  
+🌟 **Practical applications** in real-world automation scenarios
 
 **Tech Stack:** Python 3, AWS Cloud9 IDE, Bash
 
@@ -78,7 +78,7 @@ pwd
 
 ## Core Python Collections
 
-### 1️⃣ Lists: Mutable Ordered Collections
+### ① Lists: Mutable Ordered Collections
 
 Lists are Python's most versatile collection type—they hold ordered items that can be changed.
 
@@ -137,7 +137,7 @@ print(myFruitList)
 
 ---
 
-### 2️⃣ Tuples: Immutable Ordered Collections
+### ② Tuples: Immutable Ordered Collections
 
 Tuples are like lists, but they can't be changed after creation. They use parentheses `()` instead of brackets `[]`.
 
@@ -178,7 +178,7 @@ print(myFinalAnswerTuple[2])  # Output: pineapple
 
 ---
 
-### 3️⃣ Dictionaries: Key-Value Pairs
+### ③ Dictionaries: Key-Value Pairs
 
 Dictionaries store data as key-value pairs, allowing named access instead of numeric indices.
 
@@ -255,22 +255,22 @@ python3 collections.py
 
 ### Technical Skills I Practiced
 
-🛠️ **Python Data Structures**
+🔧 **Python Data Structures**
 - Understanding the difference between mutable and immutable collections
 - Knowing when to use lists vs. tuples vs. dictionaries
 - Mastering zero-based indexing and key-based access
 
-🛠️ **AWS Cloud9 Development**
+🔨 **AWS Cloud9 Development**
 - Setting up Python development environments in the cloud
 - Using integrated terminals for script execution
 - Managing project files in a cloud-based IDE
 
-🛠️ **Automation Foundations**
+⚙️ **Automation Foundations**
 - Building blocks for data manipulation scripts
 - Storing configuration data in appropriate structures
 - Working with collections in real-world scenarios
 
-🛠️ **Best Practices**
+🪛 **Best Practices**
 - Using immutable tuples for constants and fixed data
 - Leveraging dictionaries for readable, self-documenting code
 - Choosing the right collection type for performance and clarity
@@ -279,9 +279,9 @@ python3 collections.py
 
 Honestly, these three collection types felt basic at first—just different ways to store data. But once I started thinking about automation scenarios, it clicked:
 
-- 🎯 **Lists for dynamic data** — User inputs, API responses, log entries that grow over time
-- 🎯 **Tuples for constants** — Configuration values, database credentials, AWS region codes that never change
-- 🎯 **Dictionaries for structured data** — JSON responses, user profiles, system configurations with named fields
+- 💡 **Lists for dynamic data** — User inputs, API responses, log entries that grow over time
+- 💎 **Tuples for constants** — Configuration values, database credentials, AWS region codes that never change
+- 🏆 **Dictionaries for structured data** — JSON responses, user profiles, system configurations with named fields
 
 The key insight: **the collection type you choose affects both code readability and program behavior**.
 
@@ -294,7 +294,7 @@ This lab proved that mastering Python collections is essential before writing an
 
 ---
 
-## 📊 Project Status
+## 📍 Project Status
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
@@ -302,7 +302,7 @@ I'm building real projects, not just following tutorials. The goal is to prove I
 
 ---
 
-## 🤝 Let's Connect
+## 💬 Let's Connect
 
 If you're looking for someone who's serious about learning AWS the right way—hands-on, documented, and grounded in real-world architecture—let's talk.
 
@@ -328,4 +328,4 @@ If you're looking for someone who's serious about learning AWS the right way—h
   <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square" />
 </p>
 
-<h4 align="center">🐍 Built with Python • AWS Cloud9 • Data Structures • Real-World Scenarios 🚀</h4>
+<h4 align="center">🐲 Built with Python • AWS Cloud9 • Data Structures • Real-World Scenarios 🛸</h4>
