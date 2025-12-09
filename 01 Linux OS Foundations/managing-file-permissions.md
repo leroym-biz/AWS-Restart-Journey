@@ -1,10 +1,10 @@
-# 🔐 Managing File Permissions in Linux
+# 🛡️ Managing File Permissions in Linux
 
 > **Mastering Linux file permissions—the foundation of system security and multi-user environments.**
 
 ---
 
-## 📋 What's Inside
+## 📜 What's Inside
 
 - [What I Built Here](#what-i-built-here)
 - [Understanding Linux Permissions](#understanding-linux-permissions)
@@ -20,10 +20,10 @@
 This lab covered Linux file permissions—the security model that controls who can read, write, and execute files on a Linux system.
 
 The real point here wasn't just running chmod commands—it was understanding the security implications:  
-✅ **Permission modes** (symbolic and numeric notation)  
-✅ **Ownership management** using chown and chgrp  
-✅ **Special permissions** like setuid, setgid, and sticky bits  
-✅ **Real-world security** patterns for multi-user environments
+🗝️ **Permission modes** (symbolic and numeric notation)  
+👥 **Ownership management** using chown and chgrp  
+✨ **Special permissions** like setuid, setgid, and sticky bits  
+🔒 **Real-world security** patterns for multi-user environments
 
 **Tech Stack:** Amazon Linux 2023, AWS Cloud9 IDE, Bash
 
@@ -286,22 +286,22 @@ ls -l filename | awk '{print $3, $4}'
 
 ### Technical Skills I Practiced
 
-🛠️ **Linux Security Fundamentals**
+🔩 **Linux Security Fundamentals**
 - Understanding the Unix permission model
 - Reading and interpreting permission strings
 - Applying the principle of least privilege
 
-🛠️ **Permission Management**
+🔩 **Permission Management**
 - Using chmod with both symbolic and numeric notation
 - Choosing appropriate permission sets for different file types
 - Understanding when to use 755 vs 644 vs 600
 
-🛠️ **Ownership Control**
+🔩 **Ownership Control**
 - Managing file and directory ownership with chown
 - Working with group ownership using chgrp
 - Understanding the security implications of ownership changes
 
-🛠️ **Advanced Concepts**
+🔩 **Advanced Concepts**
 - Working with special permission modes (setuid, setgid, sticky bit)
 - Understanding when and why to use special permissions
 - Recognizing security risks and proper mitigation
@@ -310,10 +310,10 @@ ls -l filename | awk '{print $3, $4}'
 
 This project isn't complicated, but it touches on everything that matters when you're managing Linux systems:
 
-- 🎯 Understanding how Linux controls file access at a fundamental level
-- 🎯 Balancing security requirements with usability
-- 🎯 Applying proper permissions to prevent security vulnerabilities
-- 🎯 Managing multi-user environments effectively
+- 🎖️ Understanding how Linux controls file access at a fundamental level
+- 🎖️ Balancing security requirements with usability
+- 🎖️ Applying proper permissions to prevent security vulnerabilities
+- 🎖️ Managing multi-user environments effectively
 
 Honestly, file permissions seemed like dry sysadmin stuff at first. But once I started thinking about real-world scenarios, it clicked:
 
@@ -327,7 +327,7 @@ The key insight: **Linux permissions are the foundation of system security. Get 
 
 ---
 
-## 📊 Project Status
+## 📍 Project Status
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
@@ -335,7 +335,7 @@ I'm building real projects, not just following tutorials. The goal is to prove I
 
 ---
 
-## 🤝 Let's Connect
+## 💬 Let's Connect
 
 If you're looking for someone who's serious about learning AWS the right way—hands-on, documented, and grounded in real-world architecture—let's talk.
 
@@ -361,4 +361,4 @@ If you're looking for someone who's serious about learning AWS the right way—h
   <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square" />
 </p>
 
-<h4 align="center">🔐 Built with Linux • AWS Cloud9 • File Permissions • Real-World Security 🚀</h4>
+<h4 align="center">🛡️ Built with Linux • AWS Cloud9 • File Permissions • Real-World Security 🛸</h4>
