@@ -1,4 +1,4 @@
-# 🌐 AWS Networking Basics: VPC, Subnets, and IP Addressing
+# 🕸️ AWS Networking Basics: VPC, Subnets, and IP Addressing
 
 <p align="center"> <img src="assets/screenshots/route53-diagram.png" alt="AWS Database Architecture" width="100%"> </p>
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 📋 What's Inside
+## 🧾 What's Inside
 
 - [What I Built Here](#what-i-built-here)
 - [Architecture Overview](#architecture-overview)
@@ -22,11 +22,11 @@ These labs covered the fundamentals of AWS networking—how IP addresses work, t
 This stuff might seem dry at first, but it's critical. If you don't understand networking, you can't secure your infrastructure properly.
 
 The real point here wasn't just learning definitions—it was understanding how to design secure, isolated networks:  
-✅ **Public vs. private IP addressing** and when to use each  
-✅ **Static vs. dynamic IP assignment** with Elastic IPs  
-✅ **VPC and subnet design** for network isolation  
-✅ **Internet Gateway configuration** for public connectivity  
-✅ **Route Table management** to control traffic flow
+💠 **Public vs. private IP addressing** and when to use each  
+💠 **Static vs. dynamic IP assignment** with Elastic IPs  
+💠 **VPC and subnet design** for network isolation  
+💠 **Internet Gateway configuration** for public connectivity  
+💠 **Route Table management** to control traffic flow
 
 **Tech Stack:** AWS VPC, EC2, Internet Gateway, Route 53, Elastic IPs
 
@@ -81,10 +81,10 @@ Understanding the difference between public and private IPs is essential for des
 ```
 
 **Security Best Practices Applied:**
-- 🔒 Private subnets for sensitive resources (databases)
-- 🔒 Public subnets only for resources that need internet access
-- 🔒 No direct internet routes to private subnets
-- 🔒 Security Groups controlling all inbound/outbound traffic
+- 🏰 Private subnets for sensitive resources (databases)
+- 🏰 Public subnets only for resources that need internet access
+- 🏰 No direct internet routes to private subnets
+- 🏰 Security Groups controlling all inbound/outbound traffic
 
 The key principle: private IPs can't be routed over the internet. They're for internal communication only.
 
@@ -193,25 +193,25 @@ Understanding CIDR notation is essential for planning your network.
 
 ### Technical Skills I Practiced
 
-🛠️ **Network Design**
+🔩 **Network Design**
 - Understanding VPC architecture and subnet design
 - Knowing when to use public vs. private subnets
 - Planning IP address ranges using CIDR notation
 - Designing for high availability across multiple AZs
 
-🛠️ **IP Address Management**
+🔩 **IP Address Management**
 - Working with private and public IPs
 - Allocating and managing Elastic IPs
 - Understanding the difference between static and dynamic assignment
 - Avoiding IP address conflicts
 
-🛠️ **Routing and Connectivity**
+🔩 **Routing and Connectivity**
 - Configuring Internet Gateways for public access
 - Setting up Route Tables to control traffic flow
 - Understanding how AWS routes traffic between subnets
 - Troubleshooting connectivity issues
 
-🛠️ **Security Best Practices**
+🔩 **Security Best Practices**
 - Using private subnets for sensitive resources
 - Implementing Security Groups as virtual firewalls
 - Following the principle of least privilege for network access
@@ -223,17 +223,17 @@ Networking was honestly one of the harder concepts to wrap my head around at fir
 
 But once it clicked, I realized this is the foundation everything else is built on:
 
-- 🎯 **Security depends on network isolation** — private subnets protect databases from direct internet access
-- 🎯 **High availability requires multi-AZ design** — subnets distributed across availability zones
-- 🎯 **Cost optimization starts with architecture** — choosing between NAT gateways vs. public IPs
-- 🎯 **Troubleshooting becomes easier** — understanding traffic flow helps you debug connection issues
-- 🎯 **Compliance requirements need proper segmentation** — keeping PCI/HIPAA data in isolated subnets
+- 💡 **Security depends on network isolation** — private subnets protect databases from direct internet access
+- 💡 **High availability requires multi-AZ design** — subnets distributed across availability zones
+- 💡 **Cost optimization starts with architecture** — choosing between NAT gateways vs. public IPs
+- 💡 **Troubleshooting becomes easier** — understanding traffic flow helps you debug connection issues
+- 💡 **Compliance requirements need proper segmentation** — keeping PCI/HIPAA data in isolated subnets
 
 You can't just spin up EC2 instances and hope they work together. You need to understand how they communicate, what can reach what, and why.
 
 ---
 
-## 📝 Project Status
+## 📌 Project Status
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
@@ -241,7 +241,7 @@ I'm building real projects, not just following tutorials. The goal is to prove I
 
 ---
 
-## 🤝 Let's Connect
+## 👥 Let's Connect
 
 If you're looking for someone who's serious about learning AWS the right way—hands-on, documented, and grounded in real-world architecture—let's talk.
 
