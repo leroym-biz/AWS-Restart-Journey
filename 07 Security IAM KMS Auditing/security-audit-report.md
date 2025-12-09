@@ -1,10 +1,10 @@
-# 🔐 AWS Security, IAM, and KMS Auditing
+# 🛡️ AWS Security, IAM, and KMS Auditing
 
 > **Implementing logging, monitoring, and alerting—the kind of stuff that keeps production systems secure and compliant.**
 
 ---
 
-## 📋 What's Inside
+## 🗒️ What's Inside
 
 - [What I Built Here](#what-i-built-here)
 - [Architecture Overview](#architecture-overview)
@@ -22,10 +22,10 @@ This lab covered the fundamentals of logging and monitoring in AWS—techniques 
 Monitoring isn't the flashiest part of cloud architecture, but it's absolutely critical. Without proper logging and alerting, you're flying blind. By the time you notice something's wrong, it's already cost you money or worse—compromised security.
 
 The real point here wasn't just setting up CloudWatch—it was building a complete security monitoring system:  
-✅ **CloudWatch alarms** that trigger on specific thresholds  
-✅ **SNS notifications** for real-time email alerts  
-✅ **Stress testing** to validate alarm configurations  
-✅ **Security monitoring** to detect unauthorized access and malicious activity
+✨ **CloudWatch alarms** that trigger on specific thresholds  
+✨ **SNS notifications** for real-time email alerts  
+✨ **Stress testing** to validate alarm configurations  
+✨ **Security monitoring** to detect unauthorized access and malicious activity
 
 **Tech Stack:** Amazon CloudWatch, Amazon SNS, EC2, IAM, Stress Testing Tools
 
@@ -80,10 +80,10 @@ Honestly, getting comfortable with monitoring patterns is half the battle when s
 <p align="center"><em>CloudWatch alarm configured with 60% CPU threshold over 2 consecutive 1-minute periods</em></p>
 
 **Security Best Practices Applied:**
-- 🔒 Threshold tuned to detect anomalies without excessive false positives
-- 🔒 SNS topic restricted to authorized subscribers only
-- 🔒 CloudWatch Logs encrypted at rest
-- 🔒 IAM policies following least privilege principle
+- 🏰 Threshold tuned to detect anomalies without excessive false positives
+- 🏰 SNS topic restricted to authorized subscribers only
+- 🏰 CloudWatch Logs encrypted at rest
+- 🏰 IAM policies following least privilege principle
 
 The threshold of 60% is intentional—high enough to avoid alerts during normal load spikes, but low enough to catch malicious activity before it impacts the entire system.
 
@@ -104,10 +104,10 @@ Amazon Simple Notification Service (SNS) enables real-time email notifications w
 ```
 
 **Why SNS Matters:**
-- ⚡ **Real-time alerts** — Notification within seconds of alarm state change
-- ⚡ **Multiple subscribers** — Email security team, ops team, and on-call engineers
-- ⚡ **Integration ready** — Can trigger Lambda functions, SMS, or PagerDuty
-- ⚡ **Audit trail** — All notifications logged for compliance
+- 🏎️ **Real-time alerts** — Notification within seconds of alarm state change
+- 🏎️ **Multiple subscribers** — Email security team, ops team, and on-call engineers
+- 🏎️ **Integration ready** — Can trigger Lambda functions, SMS, or PagerDuty
+- 🏎️ **Audit trail** — All notifications logged for compliance
 
 Once you set up SNS correctly, you'll get an email confirmation. After confirming the subscription, CloudWatch alarms automatically route alerts to your inbox.
 
@@ -178,10 +178,10 @@ The graph clearly shows the moment the alarm threshold was breached. This is exa
 <p align="center"><em>CloudWatch metrics filtered by specific EC2 instance ID for granular monitoring</em></p>
 
 **Why Instance-Level Monitoring Matters:**
-- 🎯 **Granular visibility** — Monitor individual instances, not just aggregate metrics
-- 🎯 **Faster troubleshooting** — Pinpoint exactly which instance is misbehaving
-- 🎯 **Cost allocation** — Track resource usage per workload
-- 🎯 **Capacity planning** — Identify instances that need scaling or rightsizing
+- 🎖️ **Granular visibility** — Monitor individual instances, not just aggregate metrics
+- 🎖️ **Faster troubleshooting** — Pinpoint exactly which instance is misbehaving
+- 🎖️ **Cost allocation** — Track resource usage per workload
+- 🎖️ **Capacity planning** — Identify instances that need scaling or rightsizing
 
 When an alarm fires in production, you need to know **exactly** which instance is the problem. Aggregate metrics tell you something's wrong; instance-level metrics tell you **what** is wrong.
 
@@ -242,25 +242,25 @@ Security isn't one thing; it's layers. You want multiple checkpoints, not just o
 
 ### Technical Skills I Practiced
 
-🛠️ **Monitoring & Observability**
+🔩 **Monitoring & Observability**
 - Setting up CloudWatch alarms with appropriate thresholds
 - Configuring SNS topics for real-time notifications
 - Building dashboards for metrics visualization
 - Understanding alarm states and evaluation periods
 
-🛠️ **Security Operations**
+🔩 **Security Operations**
 - Simulating security incidents for testing
 - Detecting abnormal behavior patterns
 - Implementing automated alerting systems
 - Following incident response procedures
 
-🛠️ **AWS Service Integration**
+🔩 **AWS Service Integration**
 - Connecting CloudWatch, SNS, and EC2
 - Understanding metric namespaces and dimensions
 - Filtering metrics by instance ID
 - Configuring alarm actions
 
-🛠️ **Cost Optimization**
+🔩 **Cost Optimization**
 - Using CloudWatch efficiently to avoid excessive data ingestion costs
 - Setting appropriate alarm evaluation periods
 - Understanding SNS pricing (first 1,000 emails free per month)
@@ -272,10 +272,10 @@ Honestly, monitoring was one of those topics I thought would be straightforward�
 
 The more I learned, the more I realized monitoring is about **understanding your baseline** and **detecting anomalies quickly**:
 
-- 🎯 **Thresholds matter** — Too low = alert fatigue. Too high = miss incidents.
-- 🎯 **Evaluation periods are critical** — Brief spikes shouldn't wake up on-call engineers at 3 AM
-- 🎯 **Real-time matters** — In production, every minute counts during a security incident
-- 🎯 **Testing is non-negotiable** — If you don't test your alarms, you don't know if they work
+- 💡 **Thresholds matter** — Too low = alert fatigue. Too high = miss incidents.
+- 💡 **Evaluation periods are critical** — Brief spikes shouldn't wake up on-call engineers at 3 AM
+- 💡 **Real-time matters** — In production, every minute counts during a security incident
+- 💡 **Testing is non-negotiable** — If you don't test your alarms, you don't know if they work
 
 This lab simulated a malicious actor gaining control of an EC2 instance and spiking the CPU. CPU spiking has various possible causes, one of which is malware. In real production environments:
 
@@ -290,7 +290,7 @@ Once you build monitoring that answers these questions automatically, you sleep 
 
 ---
 
-## 📝 Project Status
+## 📈 Project Status
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
@@ -298,7 +298,7 @@ I'm building real projects, not just following tutorials. The goal is to prove I
 
 ---
 
-## 🤝 Let's Connect
+## 👥 Let's Connect
 
 If you're looking for someone who's serious about learning AWS the right way—hands-on, documented, and grounded in real-world architecture—let's talk.
 
@@ -324,4 +324,4 @@ If you're looking for someone who's serious about learning AWS the right way—h
   <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square">
 </p>
 
-<p align="center">🔐 <strong>Built with CloudWatch • SNS • IAM • Security Best Practices</strong> 🔐</p>
+<p align="center">🚨 <strong>Built with CloudWatch • SNS • IAM • Security Best Practices</strong> 🚨</p>
