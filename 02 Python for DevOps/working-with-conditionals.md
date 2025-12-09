@@ -1,10 +1,10 @@
-# 🐍 Working with Conditionals in Python
+# 🐲 Working with Conditionals in Python
 
 > **Mastering decision-making logic—the foundation of intelligent automation and dynamic program flow.**
 
 ---
 
-## 📋 What's Inside
+## 📜 What's Inside
 
 - [What I Built Here](#what-i-built-here)
 - [Lab Environment Setup](#lab-environment-setup)
@@ -18,10 +18,10 @@
 This lab covered Python's conditional statements—the building blocks that let programs make decisions and take different paths based on user input or system state.
 
 The real point here wasn't just writing if/else statements—it was understanding how to build intelligent, responsive programs:  
-✅ **if statements** for single-condition decision making  
-✅ **else statements** for handling alternative paths  
-✅ **elif statements** for multiple conditional branches  
-✅ **Real-world application** building an interactive package shipping service
+✨ **if statements** for single-condition decision making  
+✨ **else statements** for handling alternative paths  
+✨ **elif statements** for multiple conditional branches  
+✨ **Real-world application** building an interactive package shipping service
 
 **Tech Stack:** Python 3, AWS Cloud9 IDE, Bash
 
@@ -78,7 +78,7 @@ pwd
 
 ## Core Conditional Concepts
 
-### 1️⃣ The if Statement: Single-Condition Logic
+### ① The if Statement: Single-Condition Logic
 
 The `if` statement is your basic decision-making tool. It executes code only when a condition is true.
 
@@ -106,7 +106,7 @@ This is functional, but not great UX. Let's fix that.
 
 ---
 
-### 2️⃣ The else Statement: Handling Alternatives
+### ② The else Statement: Handling Alternatives
 
 The `else` statement provides a fallback path when the `if` condition isn't met.
 
@@ -130,7 +130,7 @@ else:
 
 ---
 
-### 3️⃣ The elif Statement: Multiple Conditions
+### ③ The elif Statement: Multiple Conditions
 
 When you have more than two possible paths, use `elif` (short for "else-if") to chain multiple conditions.
 
@@ -217,25 +217,25 @@ Would you like to buy stamps, buy an envelope, or make a copy? no
 
 ### Technical Skills I Practiced
 
-🛠️ **Conditional Logic**
+🔧 **Conditional Logic**
 - Understanding comparison operators (`==`, `!=`, `>`, `<`, etc.)
 - Building single-path decisions with `if` statements
 - Creating alternative paths with `else` statements
 - Chaining multiple conditions with `elif` statements
 
-🛠️ **Python Fundamentals**
+🔧 **Python Fundamentals**
 - Working with user input via `input()` function
 - String comparison and matching
 - Code block indentation (Python's way of defining scope)
 - String formatting with `.format()` method
 
-🛠️ **Program Flow Control**
+🔧 **Program Flow Control**
 - Understanding execution order in conditional chains
 - Knowing when to use `if`, `elif`, and `else`
 - Building responsive, user-driven applications
 - Handling edge cases and invalid input
 
-🛠️ **AWS Cloud9 Development**
+🔧 **AWS Cloud9 Development**
 - Creating and testing Python scripts in a cloud IDE
 - Using integrated terminals for script execution
 - Iterative development and testing workflows
@@ -244,10 +244,10 @@ Would you like to buy stamps, buy an envelope, or make a copy? no
 
 Honestly, conditionals seem basic at first—just if/else logic. But once you start building interactive programs, you realize they're everywhere:
 
-- 🎯 **User authentication** — If credentials match, grant access; else deny
-- 🎯 **API error handling** — If status code is 200, process data; elif 404, log error; else retry
-- 🎯 **AWS automation** — If instance state is "running", continue; elif "stopped", start it; else alert
-- 🎯 **Data validation** — If input is valid, proceed; else prompt again
+- 💡 **User authentication** — If credentials match, grant access; else deny
+- 💡 **API error handling** — If status code is 200, process data; elif 404, log error; else retry
+- 💡 **AWS automation** — If instance state is "running", continue; elif "stopped", start it; else alert
+- 💡 **Data validation** — If input is valid, proceed; else prompt again
 
 The key insight: **conditionals turn static scripts into intelligent, adaptive programs**.
 
@@ -262,7 +262,7 @@ This lab proved that mastering conditionals is essential for writing any real au
 
 ---
 
-## 📊 Project Status
+## 📌 Project Status
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
@@ -270,7 +270,7 @@ I'm building real projects, not just following tutorials. The goal is to prove I
 
 ---
 
-## 🤝 Let's Connect
+## 💬 Let's Connect
 
 If you're looking for someone who's serious about learning AWS the right way—hands-on, documented, and grounded in real-world architecture—let's talk.
 
@@ -296,4 +296,4 @@ If you're looking for someone who's serious about learning AWS the right way—h
   <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square" />
 </p>
 
-<h4 align="center">🐍 Built with Python • AWS Cloud9 • Conditional Logic • Real-World Scenarios 🚀</h4>
+<h4 align="center">🐲 Built with Python • AWS Cloud9 • Conditional Logic • Real-World Scenarios 🚀</h4>
