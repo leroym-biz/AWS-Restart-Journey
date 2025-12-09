@@ -1,10 +1,10 @@
-# 💾 AWS Storage Management: S3 & EBS Deep Dive
+# 🗄️ AWS Storage Management: S3 & EBS Deep Dive
 
 > **Mastering AWS storage solutions—S3 buckets, EBS volumes, snapshots, and versioning. The real-world storage patterns you'll use daily.**
 
 ---
 
-## 📋 What's Inside
+## 🗒️ What's Inside
 
 - [What I Built Here](#what-i-built-here)
 - [Architecture Overview](#architecture-overview)
@@ -21,11 +21,11 @@
 This lab covers the essential AWS storage services that every cloud engineer needs to master. I worked with both **Amazon S3** (object storage) and **Amazon EBS** (block storage), implementing real-world patterns for backup, versioning, and disaster recovery.
 
 **What I Actually Did:**  
-✅ **Created and secured S3 buckets** with proper permissions and versioning  
-✅ **Provisioned and attached EBS volumes** to running EC2 instances  
-✅ **Automated snapshot management** using Python and boto3  
-✅ **Implemented S3 sync operations** for efficient file transfers  
-✅ **Built a complete backup strategy** with versioning and retention policies
+✨ **Created and secured S3 buckets** with proper permissions and versioning  
+✨ **Provisioned and attached EBS volumes** to running EC2 instances  
+✨ **Automated snapshot management** using Python and boto3  
+✨ **Implemented S3 sync operations** for efficient file transfers  
+✨ **Built a complete backup strategy** with versioning and retention policies
 
 **Tech Stack:** AWS S3, Amazon EBS, EC2, Python 3, boto3, AWS CLI, Bash scripting
 
@@ -83,7 +83,7 @@ S3 buckets are the foundation of AWS storage. Getting the configuration right fr
 
 ### S3 Security Best Practices
 
-🔒 **Object Ownership & Public Access Settings**
+🏰 **Object Ownership & Public Access Settings**
 - Block all public access by default
 - Use IAM roles for EC2 instance access, not access keys
 - Enable bucket logging for audit trails
@@ -194,12 +194,12 @@ def create_snapshot(volume_id, description):
             VolumeId=volume_id,
             Description=description
         )
-        print(f"✓ Snapshot created: {snapshot['SnapshotId']}")
+        print(f"🟢 Snapshot created: {snapshot['SnapshotId']}")
         print(f"  Volume: {volume_id}")
         print(f"  Status: {snapshot['State']}")
         return snapshot['SnapshotId']
     except Exception as e:
-        print(f"✗ Error creating snapshot: {e}")
+        print(f"🔴 Error creating snapshot: {e}")
         sys.exit(1)
 
 def list_snapshots(volume_id):
@@ -214,7 +214,7 @@ def list_snapshots(volume_id):
         )
         
         snapshots = response['Snapshots']
-        print(f"\n📸 Found {len(snapshots)} snapshot(s):\n")
+        print(f"\n🎞️ Found {len(snapshots)} snapshot(s):\n")
         
         for snap in sorted(snapshots, key=lambda x: x['StartTime'], reverse=True):
             print(f"  Snapshot ID: {snap['SnapshotId']}")
@@ -225,7 +225,7 @@ def list_snapshots(volume_id):
             
         return snapshots
     except Exception as e:
-        print(f"✗ Error listing snapshots: {e}")
+        print(f"🔴 Error listing snapshots: {e}")
         return []
 
 def cleanup_old_snapshots(volume_id, retention_days=7):
@@ -238,13 +238,13 @@ def cleanup_old_snapshots(volume_id, retention_days=7):
         
         for snap in snapshots:
             if snap['StartTime'] < cutoff_date:
-                print(f"🗑️  Deleting old snapshot: {snap['SnapshotId']}")
+                print(f"🗃️  Deleting old snapshot: {snap['SnapshotId']}")
                 ec2.delete_snapshot(SnapshotId=snap['SnapshotId'])
                 deleted_count += 1
         
-        print(f"\n✓ Cleaned up {deleted_count} old snapshot(s)")
+        print(f"\n🟢 Cleaned up {deleted_count} old snapshot(s)")
     except Exception as e:
-        print(f"✗ Error during cleanup: {e}")
+        print(f"🔴 Error during cleanup: {e}")
 
 # Main execution
 if __name__ == "__main__":
@@ -255,10 +255,10 @@ if __name__ == "__main__":
     snapshot_id = create_snapshot(VOLUME_ID, DESCRIPTION)
     
     # Wait for completion (optional)
-    print("\n⏳ Waiting for snapshot to complete...")
+    print("\n⏰ Waiting for snapshot to complete...")
     waiter = ec2.get_waiter('snapshot_completed')
     waiter.wait(SnapshotIds=[snapshot_id])
-    print("✓ Snapshot completed successfully!\n")
+    print("🟢 Snapshot completed successfully!\n")
     
     # List all snapshots
     list_snapshots(VOLUME_ID)
@@ -288,10 +288,10 @@ if __name__ == "__main__":
 *Cronjob entry for automated snapshot creation with multiple snapshot states*
 
 **Why Automate Snapshots?**
-- ⚡ **Consistency:** Backups happen on schedule, not when someone remembers
-- ⚡ **Cost Control:** Automated cleanup prevents snapshot sprawl
-- ⚡ **Disaster Recovery:** Multiple point-in-time recovery options
-- ⚡ **Compliance:** Meet regulatory backup requirements automatically
+- 💎 **Consistency:** Backups happen on schedule, not when someone remembers
+- 💎 **Cost Control:** Automated cleanup prevents snapshot sprawl
+- 💎 **Disaster Recovery:** Multiple point-in-time recovery options
+- 💎 **Compliance:** Meet regulatory backup requirements automatically
 
 The snapshot workflow follows this pattern:
 1. **Create** → Snapshot begins (state: pending)
@@ -372,22 +372,22 @@ It mirrors the source to the destination by removing files from the destination 
 
 ### Technical Skills I Practiced
 
-🛠️ **Storage Architecture**
+⚙️ **Storage Architecture**
 - Understanding when to use S3 vs EBS vs EFS
 - Designing multi-layered backup strategies
 - Implementing cost-effective storage tiers
 
-🛠️ **Automation & Scripting**
+⚙️ **Automation & Scripting**
 - Python boto3 SDK for AWS automation
 - Cronjob scheduling for recurring tasks
 - Error handling and logging in production scripts
 
-🛠️ **Data Protection**
+⚙️ **Data Protection**
 - Snapshot management and retention policies
 - S3 versioning for accidental deletion protection
 - Cross-region replication for disaster recovery
 
-🛠️ **Security Best Practices**
+⚙️ **Security Best Practices**
 - IAM roles for service-to-service access
 - S3 bucket policies and access control
 - Encryption at rest and in transit
@@ -396,10 +396,10 @@ It mirrors the source to the destination by removing files from the destination 
 
 This lab demonstrates the storage patterns you'll see in production environments:
 
-- 🎯 **Automated Backup Workflows:** Set it and forget it—backups happen on schedule
-- 🎯 **Disaster Recovery Planning:** Multiple recovery points across regions
-- 🎯 **Cost Optimization:** Automated cleanup prevents storage bloat
-- 🎯 **Security-First Design:** Proper permissions, encryption, and audit logging
+- 🎖️ **Automated Backup Workflows:** Set it and forget it—backups happen on schedule
+- 🎖️ **Disaster Recovery Planning:** Multiple recovery points across regions
+- 🎖️ **Cost Optimization:** Automated cleanup prevents storage bloat
+- 🎖️ **Security-First Design:** Proper permissions, encryption, and audit logging
 
 The biggest lesson? Storage isn't just about saving files. It's about designing resilient systems that protect data, recover from failures, and scale with your business needs.
 
@@ -411,7 +411,7 @@ The biggest lesson? Storage isn't just about saving files. It's about designing 
 
 ---
 
-## 🔧 IAM Role Configuration
+## ⚙️ IAM Role Configuration
 
 One critical piece worth highlighting: proper IAM configuration for EC2 to access S3.
 
@@ -422,16 +422,16 @@ One critical piece worth highlighting: proper IAM configuration for EC2 to acces
 *Attaching IAM role to EC2 instance for secure S3 access without access keys*
 
 **Why IAM Roles Over Access Keys:**
-- ✓ No hardcoded credentials in code
-- ✓ Automatic credential rotation
-- ✓ Temporary security credentials
-- ✓ Easier permission management
+- 🟢 No hardcoded credentials in code
+- 🟢 Automatic credential rotation
+- 🟢 Temporary security credentials
+- 🟢 Easier permission management
 
 Never hardcode AWS access keys in your scripts. Always use IAM roles for EC2 instances.
 
 ---
 
-## 📊 Project Status
+## 📈 Project Status
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
@@ -439,7 +439,7 @@ I'm building real projects, not just following tutorials. The goal is to prove I
 
 ---
 
-## 🤝 Let's Connect
+## 💬 Let's Connect
 
 If you're looking for someone who understands AWS storage architecture, automation, and real-world cloud patterns—let's talk.
 
@@ -465,4 +465,4 @@ If you're looking for someone who understands AWS storage architecture, automati
   <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square" />
 </p>
 
-<h4 align="center">💾 Built with AWS S3 • EBS • EC2 • Python • boto3 • Real-World Scenarios 💾</h4>
+<h4 align="center">🗄️ Built with AWS S3 • EBS • EC2 • Python • boto3 • Real-World Scenarios 🗄️</h4>

@@ -1,10 +1,10 @@
-# 🌤️ AWS EC2 Launch and Web Server Demo
+# 🌪️ AWS EC2 Launch and Web Server Demo
 
 > **Provisioning an EC2 instance and setting up a web server from scratch—the kind of stuff you actually do on the job.**
 
 ---
 
-## 🗒️ What's Inside
+## 📜 What's Inside
 
 - [What I Built Here](#what-i-built-here)
 - [Architecture Overview](#architecture-overview)
@@ -20,10 +20,10 @@
 This lab is pretty straightforward but covers the essentials: I spun up an **Amazon EC2 instance** and configured it to run a simple Apache web server.
 
 The real point here wasn't just getting a server online—it was doing it the right way:  
-💠 **Automated setup** using User Data scripts (no manual SSH needed)  
-💠 **Security-first thinking** with proper Security Group configuration  
-💠 **Cost-conscious design** using Free Tier resources  
-💠 **High availability patterns** with multi-AZ architecture
+💎 **Automated setup** using User Data scripts (no manual SSH needed)  
+💎 **Security-first thinking** with proper Security Group configuration  
+💎 **Cost-conscious design** using Free Tier resources  
+💎 **High availability patterns** with multi-AZ architecture
 
 **Tech Stack:** AWS EC2, Amazon Linux 2023, Apache HTTP Server, Bash scripting
 
@@ -82,10 +82,10 @@ I followed the **principle of least privilege** here—only open what you absolu
 *Security Group configuration in AWS Console showing inbound and outbound rules*
 
 **Security Best Practices I Applied:**
-- 🛡️ Limited SSH access to known IP ranges only
-- 🛡️ No unnecessary ports left open
-- 🛡️ Security Groups acting as a stateful firewall
-- 🛡️ Regular OS updates via the User Data script
+- 🏰 Limited SSH access to known IP ranges only
+- 🏰 No unnecessary ports left open
+- 🏰 Security Groups acting as a stateful firewall
+- 🏰 Regular OS updates via the User Data script
 
 The Security Group is basically your first line of defense. Get this wrong and you're either locked out or wide open to the internet. Neither is great.
 
@@ -123,10 +123,10 @@ echo "<h1>Hello from AWS EC2! This is a successful web server launch.</h1>" > /v
 ```
 
 **Why This Approach Matters:**
-- 🏎️ **Repeatable:** Run this on 10 instances, get 10 identical web servers
-- 🏎️ **No manual work:** Fire-and-forget deployment
-- 🏎️ **Version-controlled:** Stick this in Git and you've got an audit trail
-- 🏎️ **Idempotent:** Running it twice won't break anything
+- ⚡ **Repeatable:** Run this on 10 instances, get 10 identical web servers
+- ⚡ **No manual work:** Fire-and-forget deployment
+- ⚡ **Version-controlled:** Stick this in Git and you've got an audit trail
+- ⚡ **Idempotent:** Running it twice won't break anything
 
 Once you start thinking in terms of automation, you never want to click through the console manually again.
 
@@ -178,22 +178,22 @@ If you see that HTML response, you're good to go.
 
 ### Technical Skills I Practiced
 
-🔩 **Cloud Infrastructure**
+⚙️ **Cloud Infrastructure**
 - Hands-on provisioning of EC2 instances
 - Understanding VPC networking and how subnets work
 - Thinking about availability zones and regional architecture
 
-🔩 **Security Engineering**
+⚙️ **Security Engineering**
 - Setting up Security Groups and network ACLs
 - Applying least privilege access controls
 - Security-first design—not an afterthought
 
-🔩 **Automation & DevOps**
+⚙️ **Automation & DevOps**
 - Infrastructure as Code using User Data scripts
 - Automated configuration management
 - Building repeatable deployment patterns
 
-🔩 **Cost Optimization**
+⚙️ **Cost Optimization**
 - Strategic use of AWS Free Tier resources
 - Right-sizing instances for the workload
 - Understanding billing and cost allocation
@@ -202,10 +202,10 @@ If you see that HTML response, you're good to go.
 
 This project isn't complicated, but it touches on everything that matters when you're managing infrastructure:
 
-- 🎖️ Designing and deploying production-ready setups
-- 🎖️ Balancing security requirements with accessibility
-- 🎖️ Automating repetitive tasks so you're not stuck clicking buttons
-- 🎖️ Documenting your work clearly (because future-you will thank present-you)
+- 🏅 Designing and deploying production-ready setups
+- 🏅 Balancing security requirements with accessibility
+- 🏅 Automating repetitive tasks so you're not stuck clicking buttons
+- 🏅 Documenting your work clearly (because future-you will thank present-you)
 
 Honestly, the best part about learning this stuff is realizing how much control you have once you understand the fundamentals.
 
@@ -219,7 +219,7 @@ I'm building real projects, not just following tutorials. The goal is to prove I
 
 ---
 
-## 💬 Let's Connect
+## 💭 Let's Connect
 
 If you're looking for someone who's serious about learning AWS the right way—hands-on, documented, and grounded in real-world architecture—let's talk.
 
@@ -245,4 +245,4 @@ If you're looking for someone who's serious about learning AWS the right way—h
   <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square" />
 </p>
 
-<h4 align="center">🌤️ Built with AWS • Linux • Apache • Bash • Real-World Scenarios 🌤️</h4>
+<h4 align="center">🌪️ Built with AWS • Linux • Apache • Bash • Real-World Scenarios 🌪️</h4>
