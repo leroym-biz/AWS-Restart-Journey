@@ -1,10 +1,10 @@
-# 🔐 Data Protection with AWS KMS and Encryption CLI
+# 🛡️ Data Protection with AWS KMS and Encryption CLI
 
 > **Implementing cryptographic encryption and decryption—the kind of stuff that keeps sensitive data secure in production.**
 
 ---
 
-## 📋 What's Inside
+## 📜 What's Inside
 
 - [What I Built Here](#what-i-built-here)
 - [Architecture Overview](#architecture-overview)
@@ -22,10 +22,10 @@ This lab covered the fundamentals of cryptography in AWS—creating encryption k
 Encryption isn't optional anymore. Whether it's compliance requirements (HIPAA, PCI-DSS, GDPR) or just basic security hygiene, you need to encrypt data at rest and in transit. This lab showed me how to do it the AWS way.
 
 The real point here wasn't just running encrypt/decrypt commands—it was understanding the complete cryptographic workflow:  
-✅ **AWS KMS key creation** with proper IAM permissions  
-✅ **Encryption CLI configuration** for automated encryption workflows  
-✅ **Plaintext to ciphertext conversion** using symmetric encryption  
-✅ **Decryption validation** to verify data integrity
+💠 **AWS KMS key creation** with proper IAM permissions  
+💠 **Encryption CLI configuration** for automated encryption workflows  
+💠 **Plaintext to ciphertext conversion** using symmetric encryption  
+💠 **Decryption validation** to verify data integrity
 
 **Tech Stack:** AWS KMS, AWS Encryption CLI, EC2, IAM, Python3, Session Manager
 
@@ -80,10 +80,10 @@ With AWS KMS, you can create and manage cryptographic keys and control their use
 | **Key Users** | voclabs IAM role | Separation of duties—administrators aren't automatically users. Who can use the key to encrypt/decrypt data. |
 
 **Security Best Practices Applied:**
-- 🔒 Symmetric encryption for performance (data at rest use case)
-- 🔒 IAM role-based access control (principle of least privilege)
-- 🔒 Key administrators separated from key users
-- 🔒 ARN documented for programmatic access
+- 🔑 Symmetric encryption for performance (data at rest use case)
+- 🔑 IAM role-based access control (principle of least privilege)
+- 🔑 Key administrators separated from key users
+- 🔑 ARN documented for programmatic access
 
 **Key Policy Design:**  
 The key policy is resource-based and defines who can use the key and for what operations. This follows the principle of **least privilege**—only the voclabs role has administrative and usage permissions.
@@ -279,25 +279,25 @@ Success. The data is back in plaintext form, but only because we had the proper 
 
 ### Technical Skills I Practiced
 
-🛠️ **Cryptography Fundamentals**
+🔧 **Cryptography Fundamentals**
 - Understanding symmetric vs. asymmetric encryption use cases
 - Implementing encryption context for additional security
 - Using key commitment to prevent key substitution attacks
 - Managing encryption metadata for audit trails
 
-🛠️ **AWS Key Management Service**
+🔧 **AWS Key Management Service**
 - Creating and configuring KMS keys with proper IAM permissions
 - Setting up key policies with separation of administrative and usage permissions
 - Understanding FIPS 140-2 validated HSMs and hardware-backed security
 - Using KMS ARNs for programmatic key access
 
-🛠️ **Encryption CLI Operations**
+🔧 **Encryption CLI Operations**
 - Installing and configuring AWS Encryption SDK CLI
 - Running encrypt/decrypt commands with proper parameters
 - Validating encryption success with exit codes
 - Managing encrypted data keys and commitment policies
 
-🛠️ **Security Engineering**
+🔧 **Security Engineering**
 - Implementing defense-in-depth strategies
 - Using IAM roles instead of long-lived credentials
 - Applying least privilege access control
@@ -309,10 +309,10 @@ Honestly, encryption was one of those topics I thought would be overly complex�
 
 The more I worked through this lab, the more I realized encryption is **non-negotiable** for any production system:
 
-- 🎯 **Compliance requirements** — HIPAA, PCI-DSS, GDPR all mandate encryption at rest
-- 🎯 **Data breach protection** — Even if an attacker steals encrypted files, they're useless without the key
-- 🎯 **Encryption context matters** — That extra layer of AAD prevents key substitution attacks
-- 🎯 **KMS handles the hard stuff** — No need to manage HSMs or key rotation manually
+- 💡 **Compliance requirements** — HIPAA, PCI-DSS, GDPR all mandate encryption at rest
+- 💡 **Data breach protection** — Even if an attacker steals encrypted files, they're useless without the key
+- 💡 **Encryption context matters** — That extra layer of AAD prevents key substitution attacks
+- 💡 **KMS handles the hard stuff** — No need to manage HSMs or key rotation manually
 
 **Real-World Applications:**
 
@@ -337,7 +337,7 @@ Encryption is useless without proper key management. You can have the strongest 
 
 ---
 
-## 📊 Project Status
+## 📈 Project Status
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
@@ -345,7 +345,7 @@ I'm building real projects, not just following tutorials. The goal is to prove I
 
 ---
 
-## 🤝 Let's Connect
+## 👥 Let's Connect
 
 If you're looking for someone who's serious about learning AWS the right way—hands-on, documented, and grounded in real-world architecture—let's talk.
 
@@ -371,4 +371,4 @@ If you're looking for someone who's serious about learning AWS the right way—h
   <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square" />
 </p>
 
-<h4 align="center">🔐 Built with AWS KMS • Encryption CLI • IAM • Cryptography Best Practices 🔐</h4>
+<h4 align="center">🏰 Built with AWS KMS • Encryption CLI • IAM • Cryptography Best Practices 🔑</h4>
