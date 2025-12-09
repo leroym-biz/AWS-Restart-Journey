@@ -1,10 +1,10 @@
-# 🗄️ AWS Database Fundamentals: SQL and NoSQL Services
+# 🗃️ AWS Database Fundamentals: SQL and NoSQL Services
 
 > **Understanding databases in AWS—from relational to NoSQL, and when to use each one.**
 
 ---
 
-## 📋 What's Inside
+## 🗒️ What's Inside
 
 - [What I Built Here](#what-i-built-here)
 - [Database Types Overview](#database-types-overview)
@@ -20,10 +20,10 @@ This lab covered the fundamentals of databases—what they are, how they're stru
 Databases aren't the flashiest part of cloud architecture, but they're arguably the most important. Get your database choice wrong and you'll pay for it in performance, cost, or both.
 
 The real point here wasn't just memorizing service names—it was understanding the trade-offs:  
-✅ **SQL vs. NoSQL** and when to use each  
-✅ **AWS database services** and their specific use cases  
-✅ **Matching workload requirements** to the right database type  
-✅ **Understanding cost and performance implications** of each choice
+💠 **SQL vs. NoSQL** and when to use each  
+💠 **AWS database services** and their specific use cases  
+💠 **Matching workload requirements** to the right database type  
+💠 **Understanding cost and performance implications** of each choice
 
 **Tech Stack:** AWS RDS, DynamoDB, Redshift, ElastiCache
 
@@ -79,10 +79,10 @@ Managed relational database service supporting multiple SQL engines. This is the
 On-demand version of Aurora that handles cold-starts and scales automatically. Best for infrequent or unpredictable workloads.
 
 **Security Best Practices Applied:**
-- 🔒 Deploy in private subnets for database tier
-- 🔒 Use Security Groups to restrict access to application tier only
-- 🔒 Enable encryption at rest using KMS
-- 🔒 Automated backups with point-in-time recovery
+- 🛡️ Deploy in private subnets for database tier
+- 🛡️ Use Security Groups to restrict access to application tier only
+- 🛡️ Enable encryption at rest using KMS
+- 🛡️ Automated backups with point-in-time recovery
 
 **When to use RDS:**
 ```bash
@@ -113,10 +113,10 @@ Serverless NoSQL database designed to scale to billions of records with guarante
 In 2019, Amazon migrated 7,500 Oracle databases (75 petabytes) to DynamoDB. Result: **60% cost reduction** and **40% latency improvement**.
 
 **Benefits:**
-- ⚡ **Serverless** — No instances to manage
-- ⚡ **Automatic scaling** — Handles traffic spikes without configuration
-- ⚡ **Built-in security** — Encryption at rest, IAM integration
-- ⚡ **Global tables** — Multi-region replication for low latency
+- 💎 **Serverless** — No instances to manage
+- 💎 **Automatic scaling** — Handles traffic spikes without configuration
+- 💎 **Built-in security** — Encryption at rest, IAM integration
+- 💎 **Global tables** — Multi-region replication for low latency
 
 **Trade-off:** DynamoDB is fast and scalable but lacks the query flexibility of SQL. No complex JOINs or aggregations. You need to design your data model carefully.
 
@@ -167,9 +167,9 @@ User Request → Application Server → Check ElastiCache
 ```
 
 **Benefits:**
-- ⚡ **Sub-millisecond response times**
-- ⚡ **Reduces database load** by 70-90% for read-heavy workloads
-- ⚡ **Cost savings** by reducing database instance sizes
+- 💎 **Sub-millisecond response times**
+- 💎 **Reduces database load** by 70-90% for read-heavy workloads
+- 💎 **Cost savings** by reducing database instance sizes
 
 **When to use ElastiCache:**
 ```bash
@@ -197,19 +197,19 @@ User Request → Application Server → Check ElastiCache
 
 ### Technical Skills I Practiced
 
-🛠️ **Database Selection**
+🔩 **Database Selection**
 - Understanding when to use SQL vs. NoSQL
 - Matching database type to workload requirements
 - Recognizing performance vs. flexibility trade-offs
 - Designing for scalability and cost optimization
 
-🛠️ **AWS Service Knowledge**
+🔩 **AWS Service Knowledge**
 - Knowing the core database services and their strengths
 - Understanding managed vs. serverless options
 - Choosing the right engine for specific use cases
 - Implementing caching layers for performance
 
-🛠️ **Architecture Design**
+🔩 **Architecture Design**
 - Using private subnets for database security
 - Implementing multi-tier architectures
 - Balancing cost, performance, and scalability
@@ -221,10 +221,10 @@ Honestly, databases were one of those topics I thought would be straightforward�
 
 The more I learned, the more I realized there's no one-size-fits-all database:
 
-- 🎯 **RDS is great for traditional apps** — ACID compliance, complex queries, relationships
-- 🎯 **DynamoDB is fast and scalable** — serverless, massive scale, but limited query flexibility
-- 🎯 **Redshift is perfect for analytics** — powerful for BI, but not for real-time transactions
-- 🎯 **ElastiCache speeds things up** — dramatic performance boost, but it's a cache, not primary storage
+- 💡 **RDS is great for traditional apps** — ACID compliance, complex queries, relationships
+- 💡 **DynamoDB is fast and scalable** — serverless, massive scale, but limited query flexibility
+- 💡 **Redshift is perfect for analytics** — powerful for BI, but not for real-time transactions
+- 💡 **ElastiCache speeds things up** — dramatic performance boost, but it's a cache, not primary storage
 
 The key is understanding your workload first, then picking the database:
 
@@ -239,7 +239,7 @@ Once you match the database to the use case, everything else falls into place.
 
 ---
 
-## 📝 Project Status
+## 📌 Project Status
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
@@ -247,7 +247,7 @@ I'm building real projects, not just following tutorials. The goal is to prove I
 
 ---
 
-## 🤝 Let's Connect
+## 💬 Let's Connect
 
 If you're looking for someone who's serious about learning AWS the right way—hands-on, documented, and grounded in real-world architecture—let's talk.
 
@@ -271,4 +271,4 @@ If you're looking for someone who's serious about learning AWS the right way—h
   <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square" />
 </p>
 
-<h4 align="center">🗄️ Built with AWS RDS • DynamoDB • Redshift • Real-World Use Cases 🗄️</h4>
+<h4 align="center">🗃️ Built with AWS RDS • DynamoDB • Redshift • Real-World Use Cases 📚</h4>
