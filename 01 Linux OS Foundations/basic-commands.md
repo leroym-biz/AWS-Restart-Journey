@@ -1,10 +1,10 @@
-# 🐧 Linux Command Line Basics
+# 🐚 Linux Command Line Basics
 
 > **Getting comfortable with the terminal—the foundation of everything you do in cloud and DevOps.**
 
 ---
 
-## 📋 What's Inside
+## 🗂️ What's Inside
 
 - [What I Built Here](#what-i-built-here)
 - [Lab Environment](#lab-environment)
@@ -20,10 +20,10 @@ This lab is all about getting comfortable in a Linux environment without a GUI. 
 The reality is, when you're managing cloud infrastructure, you're almost always SSH'd into a remote server. This is where the real work happens.
 
 I focused on:  
-✅ **Navigating the file system** efficiently  
-✅ **Managing files and directories** safely  
-✅ **Understanding Linux permissions** (critical for security)  
-✅ **Searching through files and logs** to find what you need fast  
+⚡ **Navigating the file system** efficiently  
+🛡️ **Managing files and directories** safely  
+💰 **Understanding Linux permissions** (critical for security)  
+🏛️ **Searching through files and logs** to find what you need fast  
 ✅ **Using bash history** to speed up repetitive tasks
 
 **Tech Stack:** Amazon Linux 2023, AWS EC2, Bash
@@ -65,7 +65,7 @@ Once connected, you'll see the Amazon Linux welcome screen confirming your sessi
 
 ## Core Commands & Operations
 
-### 1️⃣ File System Navigation
+### ⚙️ File System Navigation
 
 Linux organizes everything as files and directories. Getting comfortable moving around is essential.
 
@@ -89,7 +89,7 @@ Linux organizes everything as files and directories. Getting comfortable moving 
 
 ---
 
-### 2️⃣ File and Directory Management
+### 🔧 File and Directory Management
 
 Creating, moving, copying, and deleting files. Basic but critical.
 
@@ -126,7 +126,7 @@ rm -r projects
 
 ---
 
-### 3️⃣ Users and Permissions
+### 🔨 Users and Permissions
 
 This is where security starts to matter.
 
@@ -169,7 +169,7 @@ chmod 755 script.sh # Owner: rwx, Group: rx, Others: rx
 
 ---
 
-### 4️⃣ Searching and Productivity
+### 🪛 Searching and Productivity
 
 When you're troubleshooting or looking for specific config, you need to search efficiently.
 
@@ -217,22 +217,22 @@ grep -v "debug" app.log
 
 ### Technical Skills I Practiced
 
-🛠️ **Command Line Proficiency**
+🔩 **Command Line Proficiency**
 - Navigating Linux file systems without hesitation
 - Understanding the directory structure and where things live
 - Using shortcuts and autocomplete for efficiency
 
-🛠️ **File Management**
+🔩 **File Management**
 - Creating, copying, moving, and deleting files safely
 - Understanding when to use different commands
 - Avoiding common mistakes that could break things
 
-🛠️ **Security Fundamentals**
+🔩 **Security Fundamentals**
 - Reading and setting file permissions correctly
 - Understanding user, group, and other access levels
 - Knowing why proper permissions matter for cloud security
 
-🛠️ **Productivity Tools**
+🔩 **Productivity Tools**
 - Using command history to speed up repetitive tasks
 - Searching through files and logs efficiently with grep
 - Building muscle memory for the most common operations
@@ -243,18 +243,18 @@ Honestly, the command line felt intimidating at first. But once you get comforta
 
 This is the foundation for everything else in cloud:
 
-- 🎯 SSH-ing into EC2 instances for server management
-- 🎯 Managing Docker containers
-- 🎯 Deploying applications via command line
-- 🎯 Troubleshooting production issues by reading logs
-- 🎯 Writing scripts to automate repetitive tasks
-- 🎯 Modifying configuration files in production environments
+- 🎖️ SSH-ing into EC2 instances for server management
+- 🎖️ Managing Docker containers
+- 🎖️ Deploying applications via command line
+- 🎖️ Troubleshooting production issues by reading logs
+- 🎖️ Writing scripts to automate repetitive tasks
+- 🎖️ Modifying configuration files in production environments
 
 You can't avoid the terminal in this field, so might as well get good at it.
 
 ---
 
-## 📝 Project Status
+## 📊 Project Status
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
@@ -262,7 +262,7 @@ I'm building real projects, not just following tutorials. The goal is to prove I
 
 ---
 
-## 🤝 Let's Connect
+## 💬 Let's Connect
 
 If you're looking for someone who's serious about learning AWS the right way—hands-on, documented, and grounded in real-world architecture—let's talk.
 
@@ -288,4 +288,4 @@ If you're looking for someone who's serious about learning AWS the right way—h
   <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square" />
 </p>
 
-<h4 align="center">🐧 Built with Linux • Bash • AWS EC2 • Hands-On Practice 🐧</h4>
+<h4 align="center">🐚 Built with Linux • Bash • AWS EC2 • Hands-On Practice 🐚</h4>
