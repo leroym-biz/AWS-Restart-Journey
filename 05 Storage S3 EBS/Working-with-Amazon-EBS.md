@@ -1,10 +1,10 @@
-# 💾 Working with Amazon EBS
+# 🗃️ Working with Amazon EBS
 
 > **Building resilient block storage for EC2 instances—the backbone of persistent data in AWS.**
 
 ---
 
-## 📋 What's Inside
+## 🗒️ What's Inside
 
 - [What I Built Here](#what-i-built-here)
 - [Understanding EBS Architecture](#understanding-ebs-architecture)
@@ -21,10 +21,10 @@
 This lab covered Amazon EBS (Elastic Block Store)—the scalable, high-performance block storage service that powers persistent data for EC2 instances.
 
 The real point here wasn't just creating storage volumes—it was understanding production-grade storage patterns:  
-✅ **Creating and attaching** EBS volumes to running instances  
-✅ **File system configuration** with ext3 and persistent mount points  
-✅ **Snapshot backups** for disaster recovery and data protection  
-✅ **Volume restoration** from snapshots for business continuity
+✨ **Creating and attaching** EBS volumes to running instances  
+✨ **File system configuration** with ext3 and persistent mount points  
+✨ **Snapshot backups** for disaster recovery and data protection  
+✨ **Volume restoration** from snapshots for business continuity
 
 **Tech Stack:** Amazon EBS (gp2), Amazon EC2, Amazon Linux 2023, ext3 filesystem
 
@@ -291,22 +291,22 @@ This is exactly how production disaster recovery works.
 
 ### Technical Skills I Practiced
 
-🛠️ **Storage Architecture**
+🔧 **Storage Architecture**
 - Understanding EBS volume types and use cases
 - Knowing when to use gp2 vs gp3 vs io1
 - Planning for Availability Zone constraints
 
-🛠️ **Linux System Administration**
+🔧 **Linux System Administration**
 - Creating and formatting filesystems (mkfs)
 - Mounting volumes and editing /etc/fstab
 - Understanding device naming conventions
 
-🛠️ **Backup & Recovery**
+🔧 **Backup & Recovery**
 - Creating point-in-time snapshots
 - Restoring volumes from snapshots
 - Testing disaster recovery procedures
 
-🛠️ **Production Operations**
+🔧 **Production Operations**
 - Persistent mount configuration
 - Data integrity verification
 - Capacity planning and monitoring
@@ -315,10 +315,10 @@ This is exactly how production disaster recovery works.
 
 This project isn't complicated, but it touches on everything that matters for production storage:
 
-- 🎯 Building persistent storage that survives instance failures
-- 🎯 Implementing backup strategies for disaster recovery
-- 🎯 Understanding the relationship between volumes, snapshots, and S3
-- 🎯 Testing recovery procedures before you actually need them
+- 💡 Building persistent storage that survives instance failures
+- 💡 Implementing backup strategies for disaster recovery
+- 💡 Understanding the relationship between volumes, snapshots, and S3
+- 💡 Testing recovery procedures before you actually need them
 
 Honestly, the snapshot/restore workflow is something you'll use constantly in production:
 
@@ -342,7 +342,7 @@ The key insight: **EBS volumes are ephemeral attachments, but snapshots are dura
 
 ---
 
-## 📊 Project Status
+## 📈 Project Status
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
@@ -376,4 +376,4 @@ If you're looking for someone who's serious about learning AWS the right way—h
   <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square" />
 </p>
 
-<h4 align="center">💾 Built with AWS EBS • EC2 • Linux • Snapshot Management • Real-World Storage 🚀</h4>
+<h4 align="center">🖴 Built with AWS EBS • EC2 • Linux • Snapshot Management • Real-World Storage 🚀</h4>
