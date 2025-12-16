@@ -10,7 +10,7 @@
 - [Architecture Overview](#architecture-overview)
 - [The Lambda Functions](#the-lambda-functions)
 - [SNS Integration & Notifications](#sns-integration--notifications)
-- [API Gateway & Data Extraction](#api-gateway--data-extraction)
+- [Deployment & Configuration](#deployment--configuration)
 - [What I Learned](#what-i-learned)
 
 ---
@@ -119,13 +119,17 @@ This function handles SNS subscriptions—connecting email addresses to topics s
 - ✓ Returns meaningful status codes
 - ✓ Idempotent—running twice won't create duplicates
 
-### Function 3: Custom Lambda Layer
+---
+
+## SNS Integration & Notifications
+
+### Building the Lambda Layer
 
 <p align="center">
-  <img src="assets/screenshots/create-custom-layer.png" alt="Custom Lambda Layer" width="80%"/>
+  <img src="assets/screenshots/create-lambda-layer.png" alt="Lambda Layer Creation" width="80%"/>
 </p>
 
-*Building a custom Lambda layer to package dependencies efficiently*
+*Creating a Lambda layer to package shared dependencies*
 
 Lambda layers let you package dependencies separately from your function code. This means faster deployments and cleaner code organization.
 
@@ -137,7 +141,13 @@ Lambda layers let you package dependencies separately from your function code. T
 
 I packaged a custom Python library that multiple functions need. Instead of bundling it with each function (bloat), I created one layer that all functions reference.
 
-### Function 4: Data Extraction Function
+<p align="center">
+  <img src="assets/screenshots/create-custom-layer.png" alt="Custom Lambda Layer Configuration" width="80%"/>
+</p>
+
+*Configuring the custom layer with proper runtime and architecture settings*
+
+### Data Extraction Function
 
 <p align="center">
   <img src="assets/screenshots/create-dataextractor-function.png" alt="Data Extractor Function" width="80%"/>
@@ -154,6 +164,12 @@ This is where things get interesting. This function:
 **The Real-World Use Case:**
 Think about processing user uploads, parsing CSVs, extracting metadata from images, or transforming data formats. This pattern handles all of that without managing any infrastructure.
 
+---
+
+## Deployment & Configuration
+
+### Environment Variables & Security
+
 <p align="center">
   <img src="assets/screenshots/edit-environmental-variables.png" alt="Environment Variables" width="80%"/>
 </p>
@@ -168,11 +184,7 @@ Think about processing user uploads, parsing CSVs, extracting metadata from imag
 
 No hardcoded values. Everything configurable. That's how you do it right.
 
----
-
-## SNS Integration & Notifications
-
-### Setting Up the Notification Flow
+### VPC Configuration for Private Resources
 
 <p align="center">
   <img src="assets/screenshots/choosing-vpc-subnet.png" alt="VPC Configuration" width="80%"/>
@@ -188,81 +200,27 @@ For functions that need to access resources in a VPC (like RDS databases or priv
 - 🔒 Security groups with minimal ingress rules
 - 🔒 VPC endpoints for AWS service access (avoid NAT charges)
 
+### Deployment Package Upload
+
 <p align="center">
   <img src="assets/screenshots/upload-zip-file.png" alt="Upload Deployment Package" width="80%"/>
 </p>
 
 *Uploading the Lambda deployment package with all dependencies bundled*
 
-### Testing the Pipeline
+I packaged the function code and dependencies into a ZIP file and uploaded it directly through the Lambda console. For production environments, this would be automated through CI/CD pipelines, but for learning and testing, manual uploads work perfectly.
 
-<p align="center">
-  <img src="assets/screenshots/ec2.PNG" alt="EC2 Test Instance" width="80%"/>
-</p>
-
-*Using an EC2 instance to simulate file uploads and test the Lambda pipeline*
-
-I spun up a test EC2 instance to simulate real-world file uploads. This lets me verify the entire flow:
-1. File uploads to S3
-2. Lambda function triggers
-3. Data extraction runs
-4. SNS notification fires
-5. Email arrives with processing results
-
-**Testing Strategy:**
-```bash
-# Upload test file to S3
-aws s3 cp test-data.json s3://my-lambda-bucket/input/
-
-# Check Lambda execution logs
-aws logs tail /aws/lambda/DataExtractor --follow
-
-# Verify SNS notification sent
-aws sns list-subscriptions --topic-arn <TOPIC_ARN>
+**Deployment Package Structure:**
+```
+lambda-package.zip
+├── lambda_function.py       # Main handler
+├── utils/                   # Helper modules
+│   ├── data_processor.py
+│   └── validators.py
+└── requirements.txt         # Python dependencies
 ```
 
----
-
-## API Gateway & Data Extraction
-
-### Exposing Lambda via REST API
-
-<p align="center">
-  <img src="assets/screenshots/stabilizing system ec2 instance.png" alt="System Architecture" width="80%"/>
-</p>
-
-*Complete serverless architecture showing Lambda, API Gateway, SNS, and S3 integration*
-
-The final piece was exposing the data extraction function through API Gateway. Now external systems can trigger extractions via HTTP requests.
-
-**API Endpoints Created:**
-
-| Endpoint | Method | What It Does |
-|----------|--------|--------------|
-| `/extract` | POST | Triggers data extraction for a given S3 key |
-| `/status` | GET | Checks extraction job status |
-| `/topics` | POST | Creates new SNS topics |
-| `/subscribe` | POST | Adds email subscriptions |
-
-**Example API Call:**
-```bash
-curl -X POST https://api-id.execute-api.us-east-1.amazonaws.com/prod/extract \
-  -H "Content-Type: application/json" \
-  -d '{
-    "bucket": "my-lambda-bucket",
-    "key": "input/data.json"
-  }'
-```
-
-**Response:**
-```json
-{
-  "statusCode": 200,
-  "message": "Extraction started",
-  "jobId": "extract-12345",
-  "estimatedCompletion": "2025-12-16T21:30:00Z"
-}
-```
+The key is keeping your deployment package under 50MB for direct uploads. Anything larger needs to go through S3.
 
 ---
 
@@ -308,12 +266,27 @@ The shift from "managing servers" to "managing functions" is massive. You stop t
 - Data transformations and ETL pipelines
 - Scheduled jobs (via EventBridge)
 - Backends for web and mobile apps
+- Microservices architectures
 
 **Lambda might not be ideal for:**
 - Long-running processes (15-minute max execution time)
 - High-memory workloads (10 GB max)
 - Applications requiring persistent connections
 - Workloads with consistent, predictable traffic (EC2 might be cheaper)
+
+### Key Patterns I Implemented
+
+**SNS Fan-Out Pattern:**
+One event triggers multiple Lambda functions through SNS topics. This decouples your services and makes them independently scalable.
+
+**Layer Strategy:**
+Separate dependencies from business logic. Update libraries without touching function code. Share common code across multiple functions.
+
+**Environment-Driven Configuration:**
+Never hardcode credentials or configuration. Use environment variables and parameter stores for secure, flexible deployments.
+
+**VPC Integration:**
+Connect Lambda to private resources securely while maintaining the ability to access public AWS services through VPC endpoints.
 
 ---
 
