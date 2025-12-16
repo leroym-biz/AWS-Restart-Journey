@@ -1,14 +1,14 @@
-# 🎓 AWS Training & Certifications
+# 🎖️ AWS Training & Certifications
 
 <p align="center">
-  <img src="screenshots/aws-cloud-quest-cloud-practitioner-training-badge.png" alt="AWS Cloud Quest Badge" width="200">
+  <img src="assets/screenshots/aws-cloud-quest-cloud-practitioner-training-badge.png" alt="AWS Cloud Quest Badge" width="200">
 </p>
 
 > **Proof of hands-on learning—not just exam prep, but practical cloud skills built through interactive simulations, labs, and real-world scenarios.**
 
 ---
 
-## 📋 What's Inside
+## 📜 What's Inside
 
 - [About This Certification Journey](#about-this-certification-journey)
 - [AWS Official Certifications](#aws-official-certifications)
@@ -31,13 +31,13 @@ The goal isn't certification for certification's sake—it's building the knowle
 
 ## AWS Official Certifications
 
-### 🏅 AWS Cloud Quest: Cloud Practitioner - TRAINED
+### 🎮 AWS Cloud Quest: Cloud Practitioner - TRAINED
 
 <p align="left">
-  <img src="screenshots/aws-cloud-quest-cloud-practitioner-training-badge.png" alt="AWS Cloud Quest Badge" width="150">
+  <img src="assets/screenshots/aws-cloud-quest-cloud-practitioner-training-badge.png" alt="AWS Cloud Quest Badge" width="150">
 </p>
 
-**Status:** ✅ Completed  
+**Status:** 🏁 Completed  
 **Completed:** December 2025  
 **Platform:** AWS Cloud Quest (Game-Based Learning)
 
@@ -66,11 +66,11 @@ The AWS Certified Cloud Practitioner validates foundational, high-level understa
 
 AWS SimuLearn uses realistic simulated scenarios powered by Amazon Bedrock generative AI to teach technical skills through interactive customer conversations and hands-on labs.
 
-### 📡 File Systems in the Cloud
+### 🗂️ File Systems in the Cloud
 
-**Status:** ✅ Completed  
+**Status:** 🏁 Completed  
 **Completed:** December 2, 2025  
-**Certificate:** [View Certificate](screenshots/AWS%20File%20Systems%20in%20the%20Cloud.png)
+**Certificate:** <img src="assets/screenshots/AWS%20File%20Systems%20in%20the%20Cloud.png" alt="AWS File Systems in the Cloud Certificate" width="150">
 
 **What This Training Covered:**
 
@@ -93,11 +93,11 @@ Understanding these distinctions means architecting solutions that actually work
 
 ---
 
-### 🌐 Networking Concepts
+### 🕸️ Networking Concepts
 
-**Status:** ✅ Completed  
+**Status:** 🏁 Completed  
 **Completed:** December 2, 2025  
-**Certificate:** [View Certificate](screenshots/AWS%20Networking%20Concepts.png)
+**Certificate:** <img src="assets/screenshots/AWS%20Networking%20Concepts.png" alt="AWS Networking Concepts Certificate" width="150">
 
 **What This Training Covered:**
 
@@ -120,11 +120,11 @@ The Pet Shore architecture project relied heavily on this knowledge: isolating d
 
 ---
 
-### 🔐 Introduction to AWS Identity and Access Management (IAM)
+### 🔑 Introduction to AWS Identity and Access Management (IAM)
 
-**Status:** ✅ Completed  
+**Status:** 🏁 Completed  
 **Completed:** November 12, 2025  
-**Certificate:** [View Certificate](screenshots/Introduction%20to%20AWS%20Identity%20and%20Access%20Management%20(IAM).png)
+**Certificate:** <img src="assets/screenshots/Introduction%20to%20AWS%20Identity%20and%20Access%20Management%20(IAM).png" alt="IAM Certificate" width="150">
 
 **What This Training Covered:**
 
@@ -153,11 +153,11 @@ In the Ember & Co project, I implemented a CloudFront-only S3 access policy usin
 
 Praesignis is the leading AWS re/Start partner in South Africa, delivering specialized training in cloud computing and AI/ML technologies.
 
-### 🤖 AI Practitioner Learning Plan
+### 🧠 AI Practitioner Learning Plan
 
-**Status:** ✅ Completed  
+**Status:** 🏁 Completed  
 **Completed:** September 16, 2025  
-**Certificate:** [View Certificate](screenshots/AI%20Practitioner%20Learning%20Plan.png)
+**Certificate:** <img src="assets/screenshots/AI%20Practitioner%20Learning%20Plan.png" alt="AI Practitioner Certificate" width="150">
 
 **What This Program Covered:**
 
@@ -178,11 +178,11 @@ Understanding AI/ML services means I can architect solutions that go beyond basi
 
 ---
 
-### 💼 Generative AI for Decision Makers
+### 📊 Generative AI for Decision Makers
 
-**Status:** ✅ Completed  
+**Status:** 🏁 Completed  
 **Completed:** September 13, 2025  
-**Certificate:** [View Certificate](screenshots/Generative%20AI%20for%20Decision%20Makers.png)
+**Certificate:** <img src="assets/screenshots/Generative%20AI%20for%20Decision%20Makers.png" alt="Generative AI for Decision Makers Certificate" width="150">
 
 **What This Program Covered:**
 
@@ -205,7 +205,7 @@ Stakeholders don't care about "Amazon Bedrock with Claude integration." They car
 
 ## Skills Matrix
 
-### 🛠️ Technical Skills Acquired
+### 🧰 Technical Skills Acquired
 
 | Certification | Core Services Learned | Key Concepts Mastered |
 |--------------|----------------------|----------------------|
@@ -216,7 +216,7 @@ Stakeholders don't care about "Amazon Bedrock with Claude integration." They car
 | **AI Practitioner** | Bedrock, SageMaker, Amazon Q | Generative AI applications, prompt engineering, model selection |
 | **AI for Decision Makers** | Business strategy, ROI analysis | AI project planning, organizational change management |
 
-### 🎯 Practical Applications
+### ⚓ Practical Applications
 
 **From Training to Production:**
 
@@ -250,23 +250,23 @@ Cloud technology evolves fast. These certifications represent **active, ongoing 
 
 ---
 
-## 🎯 Certification Roadmap
+## 📅 Certification Roadmap
 
 **Completed:**
-- ✅ AWS Cloud Quest: Cloud Practitioner - TRAINED
-- ✅ AWS SimuLearn: File Systems in the Cloud
-- ✅ AWS SimuLearn: Networking Concepts
-- ✅ AWS SimuLearn: Introduction to IAM
-- ✅ Praesignis: AI Practitioner Learning Plan
-- ✅ Praesignis: Generative AI for Decision Makers
+- 🏁 AWS Cloud Quest: Cloud Practitioner - TRAINED
+- 🏁 AWS SimuLearn: File Systems in the Cloud
+- 🏁 AWS SimuLearn: Networking Concepts
+- 🏁 AWS SimuLearn: Introduction to IAM
+- 🏁 Praesignis: AI Practitioner Learning Plan
+- 🏁 Praesignis: Generative AI for Decision Makers
 
 **In Progress:**
-- 🔄 AWS Certified Cloud Practitioner (CLF-C02) exam preparation
+- 🧪 AWS Certified Cloud Practitioner (CLF-C02) exam preparation
 
 **Planned:**
-- 📋 AWS Certified Solutions Architect - Associate
-- 📋 AWS Certified Developer - Associate
-- 📋 AWS Certified AI Practitioner
+- 📅 AWS Certified Solutions Architect - Associate
+- 📅 AWS Certified Developer - Associate
+- 📅 AWS Certified AI Practitioner
 
 Each certification builds on the previous, creating a comprehensive knowledge base that spans architecture, security, development, and AI/ML.
 
@@ -309,4 +309,4 @@ If you're looking for someone who has **proven cloud knowledge through hands-on 
   <img src="https://img.shields.io/badge/Focus-Hands--On%20Cloud%20Skills-blue?style=flat-square">
 </p>
 
-<p align="center">🎓 <strong>AWS Trained • Hands-On Labs • Real-World Application • Continuous Learning</strong> 🎓</p>
+<p align="center">🏵️ <strong>AWS Trained • Hands-On Labs • Real-World Application • Continuous Learning</strong> 🏵️</p>
