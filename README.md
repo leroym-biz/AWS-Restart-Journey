@@ -9,7 +9,7 @@
 
 <!-- ========================= HEADER IMAGE ========================= -->
 <p align="center">
-  <img src="Lab_Assets/screenshots/AWS Restart.png" alt="AWS Restart Journey Header" width="100%"/>
+  <img src="Lab Assets/screenshots/AWS Restart.png" alt="AWS Restart Journey Header" width="100%"/>
 </p>
 
 <h1 align="center">🚀 AWS Portfolio: Cloud Practitioner Certification & Advanced Projects (3-Month Log) ☁️</h1>
