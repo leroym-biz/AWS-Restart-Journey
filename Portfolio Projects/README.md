@@ -35,7 +35,7 @@ I'm not just spinning up resources and calling it a day. I'm designing solutions
 
 ## Featured Projects
 
-### Project 01: Embers & Co - Static Website Hosting
+### Project 01: Ember & Co - Static Website Hosting
 
   <img src="https://img.shields.io/badge/Status-Complete-success?style=flat-square">
   <img src="https://img.shields.io/badge/AWS-S3%20%7C%20CloudFront%20%7C%20Route53-orange?style=flat-square">
@@ -63,19 +63,45 @@ I'm not just spinning up resources and calling it a day. I'm designing solutions
 
 ---
 
-### Project 02: [Coming Soon]
+### Project 02: Pet Shore - 3D E-Commerce Platform Architecture
 
-**Status:** In Development
+  <img src="https://img.shields.io/badge/Status-Complete-success?style=flat-square">
+  <img src="https://img.shields.io/badge/AWS-S3%20%7C%20CloudFront%20%7C%20EC2%20%7C%20RDS%20%7C%20DynamoDB-orange?style=flat-square">
+  <img src="https://img.shields.io/badge/Focus-Multi--Tier%20Architecture-blue?style=flat-square">
 
-More production-grade projects coming soon. Each one will demonstrate different AWS services and real-world architecture patterns.
+**The Problem:** Designing cloud infrastructure for a 3D shopping platform where fast content delivery and surviving traffic spikes isn't optional—it's survival.
+
+**The Solution:** Architected a production-grade 3-tier AWS application:
+- **Content Delivery (CloudFront + S3)** for global 3D model caching at edge locations
+- **Elastic Compute (EC2 + Auto Scaling + ALB)** that responds to demand automatically
+- **Dual-Database Strategy (RDS + DynamoDB)** balancing consistency and speed
+- **Multi-AZ architecture** engineered for failure scenarios
+
+**Technical Impact:**
+- 95% reduction in origin server load through edge caching
+- 28 seconds to 3 seconds average load time for 50MB 3D models
+- Auto Scaling eliminates 3 AM idle capacity costs
+- Multi-AZ deployment survives entire data center failures
+
+**Tech Stack:** Amazon S3, CloudFront, EC2, Auto Scaling, Application Load Balancer, RDS, DynamoDB, Route 53, VPC
+
+**Key Takeaway:** Fast content delivery is non-negotiable for 3D applications. This project taught me how to design systems that handle unpredictable traffic, engineer for expected failures, and balance complexity vs. performance vs. cost.
+
+[📂 View Project Details](./project_02_3D_Architecture/)
 
 ---
 
-### Project 03: [Coming Soon]
+### Project 03: AWS Lex Bot (TBD)
 
-**Status:** Planned
+  <img src="https://img.shields.io/badge/Status-In%20Development-yellow?style=flat-square">
+  <img src="https://img.shields.io/badge/AWS-Lex%20%7C%20Lambda-orange?style=flat-square">
+  <img src="https://img.shields.io/badge/Focus-Conversational%20AI-blue?style=flat-square">
 
-Building a portfolio that showcases the full range of AWS capabilities—compute, storage, databases, networking, security, and serverless.
+**Status:** In Development
+
+Building conversational AI solutions with AWS Lex. More details coming soon as the project progresses.
+
+[📂 Project Folder](./project_03_AWS_Lex_Bot_(TBD)/)
 
 ---
 
@@ -90,8 +116,12 @@ Portfolio_Projects/
 │   │   └── screenshots/          # Visual documentation
 │   ├── EMBERS-CO-presentation.pdf # Business case presentation
 │   └── readme.md                  # Full project documentation
-├── project_02/                    # Next project
-├── project_03/                    # Future project
+├── project_02_3D_Architecture/
+│   ├── assets/
+│   │   └── screenshots/          # Architecture diagrams
+│   └── 3D-Architecture-Design.md # Design document
+├── project_03_AWS_Lex_Bot_(TBD)/
+│   └── [In Development]
 └── README.md                      # This file
 ```
 
@@ -114,26 +144,43 @@ Portfolio_Projects/
 - Cost-optimized infrastructure using the right service for each use case
 
 **Projects Showcasing This:**
-- Embers & Co: S3 + CloudFront serverless architecture
-- Coming projects: EC2, RDS, Lambda, DynamoDB implementations
+- **Ember & Co:** Serverless S3 + CloudFront architecture with zero server management
+- **Pet Shore:** 3-tier architecture spanning presentation, application, and data layers
+- **Coming:** Lambda-based serverless APIs and event-driven architectures
 
 ---
 
-### 🛠️ Security Engineering
+### 🔐 Security Engineering
 
 **What I'm Implementing:**
 - Zero-trust security models (S3 buckets locked to CloudFront only)
 - IAM policies following principle of least privilege
-- Encryption at rest and in transit (KMS, TLS/SSL)
-- Security Groups and NACLs for network isolation
+- Defense-in-depth strategies with multiple security layers
+- VPC isolation and network access control
 
 **Projects Showcasing This:**
-- Embers & Co: CloudFront Service Principal with SourceArn conditions
-- Coming projects: VPC isolation, KMS encryption, WAF integration
+- **Ember & Co:** CloudFront Service Principal with SourceArn conditions
+- **Pet Shore:** VPC isolation, private subnets, security groups for traffic control
+- **Coming:** KMS encryption, WAF integration, secrets management
 
 ---
 
-### 🛠️ Business Communication
+### 📊 Systems Design & Trade-offs
+
+**What I'm Analyzing:**
+- Right-sizing resources to balance performance and cost
+- Choosing appropriate database technologies (SQL vs. NoSQL)
+- Understanding service trade-offs (complexity vs. performance vs. cost)
+- Designing for constraints (bandwidth, budget, team size)
+
+**Projects Showcasing This:**
+- **Ember & Co:** S3 static hosting vs. EC2 web servers—storage cost optimization
+- **Pet Shore:** RDS for consistency vs. DynamoDB for speed—dual-database rationale
+- **Coming:** Lambda vs. EC2, Step Functions vs. custom orchestration
+
+---
+
+### 💼 Business Communication
 
 **What I'm Delivering:**
 - Technical solutions presented in business language
@@ -142,22 +189,39 @@ Portfolio_Projects/
 - PowerPoint presentations for stakeholder buy-in
 
 **Projects Showcasing This:**
-- Embers & Co: Complete business case presentation
-- Coming projects: Architecture decision records (ADRs)
+- **Ember & Co:** Complete business case presentation with 7-week migration roadmap
+- **Pet Shore:** Architecture decision records explaining trade-offs to non-technical stakeholders
+- **Coming:** Technical proposals, architecture decision documents
 
 ---
 
-### 🛠️ DevOps & Automation
+### ⚡ Performance Optimization
 
-**What I'm Automating:**
-- Infrastructure as Code thinking (even for manual deployments)
-- Repeatable deployment patterns
-- Configuration management
-- CI/CD pipeline architecture
+**What I'm Optimizing:**
+- Content delivery network configuration and edge caching strategies
+- Database query performance tuning
+- Auto Scaling policies for elastic workloads
+- File compression and progressive loading patterns
 
 **Projects Showcasing This:**
-- Embers & Co: Documentation-first approach for future automation
-- Coming projects: CloudFormation, Terraform, CI/CD pipelines
+- **Ember & Co:** CloudFront edge caching for sub-100ms global load times
+- **Pet Shore:** 28s to 3s load time improvement through CDN optimization and file compression
+- **Coming:** Lambda cold start optimization, database indexing strategies
+
+---
+
+### 🏗️ High Availability & Disaster Recovery
+
+**What I'm Engineering:**
+- Multi-AZ deployments for fault tolerance
+- Automatic failover configurations
+- Data replication strategies
+- Backup and recovery procedures
+
+**Projects Showcasing This:**
+- **Ember & Co:** S3 versioning for rollback capability
+- **Pet Shore:** Multi-AZ architecture surviving entire data center failures
+- **Coming:** Cross-region replication, disaster recovery runbooks
 
 ---
 
@@ -167,8 +231,8 @@ Portfolio_Projects/
 
 I'm not building "Deploy a static website to S3" tutorials. I'm solving actual business problems:
 - Restaurant losing revenue from double-bookings
-- Companies needing secure, scalable infrastructure
-- Organizations migrating from on-premises to cloud
+- E-commerce platform needing to handle 50MB 3D models without losing customers
+- Organizations requiring secure, scalable infrastructure
 
 ### 2. Production-Ready Architecture
 
@@ -184,7 +248,7 @@ Each project includes:
 - Business problem definition
 - Architecture diagrams and explanations
 - Implementation steps with screenshots
-- Security considerations
+- Security considerations and trade-off analysis
 - What I learned and why it matters
 
 ### 4. Stakeholder Presentations
@@ -210,10 +274,11 @@ But I'm not just chasing a cert. I'm building **proof of work**:
 **The Questions These Projects Answer:**
 
 For hiring managers:
-- Can you architect AWS solutions? ✅ Yes, here's the S3 + CloudFront architecture
+- Can you architect AWS solutions? ✅ Yes, here's the 3-tier Pet Shore architecture
 - Can you implement security? ✅ Yes, here's the CloudFront-only access policy
+- Can you optimize for performance? ✅ Yes, here's the 28s to 3s load time improvement
 - Can you present to stakeholders? ✅ Yes, here's the PowerPoint deck
-- Can you document your work? ✅ Yes, here's the complete README
+- Can you document your work? ✅ Yes, here's the complete README with trade-off analysis
 
 For me:
 - Do I understand AWS services deeply? ✅ Yes, I can explain trade-offs
@@ -225,14 +290,13 @@ For me:
 ## 🎯 Project Roadmap
 
 **Completed:**
-- ✅ Embers & Co Static Website (S3, CloudFront, Route 53)
+- ✅ Ember & Co Static Website (S3, CloudFront, Route 53, IAM)
+- ✅ Pet Shore 3D E-Commerce Architecture (Multi-tier design, Auto Scaling, Multi-AZ)
 
 **In Progress:**
-- 🔄 Project 02: [Details coming soon]
-- 🔄 Project 03: [Details coming soon]
+- 🔄 Project 03: AWS Lex Bot (Conversational AI)
 
 **Planned:**
-- 📋 Multi-tier web application (EC2, RDS, ALB)
 - 📋 Serverless API (Lambda, API Gateway, DynamoDB)
 - 📋 Data pipeline (S3, Lambda, Glue, Athena)
 - 📋 CI/CD pipeline (CodePipeline, CodeBuild, CodeDeploy)
@@ -243,9 +307,9 @@ Each project will demonstrate different AWS services and solve different busines
 
 ## 📝 Project Status
 
-This is an **active learning portfolio**—projects are added weekly as I complete them. Check back regularly for new AWS solutions.
+This is an **active learning portfolio**—projects are added as I complete them. Check back regularly for new AWS solutions.
 
-**Current Focus:** Building hands-on projects that demonstrate production-ready AWS architecture skills.
+**Current Focus:** Building hands-on projects that demonstrate production-ready AWS architecture skills, from serverless hosting to multi-tier applications to conversational AI.
 
 **Commitment:** Hands-on work every week. Not just watching videos—actually building infrastructure, writing documentation, and solving real problems.
 
@@ -274,7 +338,7 @@ If you're looking for someone who can build AWS infrastructure **and** explain w
 
 <p align="center">
   <img src="https://img.shields.io/badge/Portfolio-Active%20Development-success?style=flat-square">
-  <img src="https://img.shields.io/badge/Projects-Growing%20Weekly-brightgreen?style=flat-square">
+  <img src="https://img.shields.io/badge/Projects-3%20Active-brightgreen?style=flat-square">
   <img src="https://img.shields.io/badge/Focus-Production%20Ready%20Solutions-blue?style=flat-square">
 </p>
 
