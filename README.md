@@ -20,7 +20,8 @@
 
 ## 🎖️ What I'm Really Doing Here: Building, Not Just Studying
 
-Hey, thanks for stopping by. This repository documents my three-month AWS journey—not the "watch videos and pass exams" kind, but the hands-on, build-real-infrastructure kind.
+Hey, thanks for stopping by. 
+This repository documents my three-month AWS journey—not the "watch videos and pass exams" kind, but the hands-on, build-real-infrastructure kind.
 
 I'm not here to collect certifications. I'm here to prove I can architect cloud solutions that actually work in production. After nearly a decade translating business problems into technical solutions, I decided it was time to formalize my cloud skills properly: by building systems that scale, designing security that holds up under scrutiny, and making architecture decisions I can defend with data.
 
