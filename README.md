@@ -1,3 +1,5 @@
+# 🛸 AWS Portfolio: Cloud Practitioner Certification & Advanced Projects (3-Month Log) 🌪️
+
 <!-- ========================= BADGES ========================= -->
 <p align="center">
   <img src="https://img.shields.io/badge/AWS%20Cloud%20Practitioner-In%20Progress-blue?style=for-the-badge&logo=amazonaws" />
@@ -12,11 +14,11 @@
   <img src="Lab Assets/screenshots/AWS Restart.png" alt="AWS Restart Journey Header" width="100%"/>
 </p>
 
-<h1 align="center">🚀 AWS Portfolio: Cloud Practitioner Certification & Advanced Projects (3-Month Log) ☁️</h1>
+<h1 align="center">🛸 AWS Portfolio: Cloud Practitioner Certification & Advanced Projects (3-Month Log) 🌪️</h1>
 
 ---
 
-## ⭐ What I'm Really Doing Here: Building, Not Just Studying
+## 🎖️ What I'm Really Doing Here: Building, Not Just Studying
 
 Hey, thanks for stopping by. This repository documents my three-month AWS journey—not the "watch videos and pass exams" kind, but the hands-on, build-real-infrastructure kind.
 
@@ -28,13 +30,13 @@ This isn't memorization. It's proof of work. Welcome to the journey.
 
 ---
 
-## 💡 Projects I Built (Portfolio_Projects)
+## 🗂️ Projects I Built (Portfolio_Projects)
 
 This is where theory had to turn into working infrastructure.  
 These aren't simple "Hello World" labs; they're multi-service challenges designed to replicate real-world architectural scenarios.  
 Reviewing these shows you how I approach design problems.
 
-| 🧩 **Project Title** | ⚙️ **Core Services** | 🎯 **Key Architectural Skill Demonstrated** |
+| 🎮 **Project Title** | ⚡ **Core Services** | 🏆 **Key Architectural Skill Demonstrated** |
 |----------------------|---------------------|------------------------------------------|
 | **Static Website Labs** | S3, CloudFront, Route 53 | Building globally distributed, low-latency content delivery using CDN architecture with proper caching strategies. |
 | **3D Architecture** | EC2, Auto Scaling, Load Balancing | Designing compute infrastructure that scales horizontally based on demand while maintaining high availability across multiple AZs. |
@@ -42,24 +44,24 @@ Reviewing these shows you how I approach design problems.
 
 ---
 
-## 🧭 The Portfolio Structure: From Foundations to Cloud
+## 🗺️ The Portfolio Structure: From Foundations to Cloud
 
 I structured the folders this way because solid cloud architecture starts with understanding the fundamentals.  
 You can't secure EC2 instances if you don't understand Linux permissions.  
 You can't optimize Lambda costs if you don't know Python efficiency.  
 The numeric prefixes create a logical learning path every time you navigate the repo.
 
-| **Folder 📂** | **CCP Domain Focus** | **High-Value Skills Demonstrated** |
+| **Folder 📁** | **CCP Domain Focus** | **High-Value Skills Demonstrated** |
 |---------------|----------------------|------------------------------------|
-| `00_Certifications_Study_Guide` | 🥇 Exam Prep | Structured study approach with comprehensive notes—shows I take learning seriously and systematically. |
-| `01_Linux_OS_Foundations` | 💻 Operating Systems | Command line mastery, file system management, and the Unix fundamentals that underpin cloud computing. |
+| `00_Certifications_Study_Guide` | 🏅 Exam Prep | Structured study approach with comprehensive notes—shows I take learning seriously and systematically. |
+| `01_Linux_OS_Foundations` | 🖥️ Operating Systems | Command line mastery, file system management, and the Unix fundamentals that underpin cloud computing. |
 | `02_Python_for_DevOps` | 🐍 Scripting | Core Python for automation, system administration, and building efficient serverless functions. |
-| `03_Database_SQL_Fundamentals` | 🗄️ Database Literacy | SQL proficiency (CRUD operations), data modeling, and understanding how to work with managed database services like RDS. |
-| `04_Compute_Services_EC2_Lambda` | 🖥️ Compute | Provisioning EC2 instances, deploying serverless functions, understanding compute optimization, and building event-driven architectures. |
-| `05_Storage_S3_EBS` | 💾 Storage | Data durability strategies, cost management with S3 Lifecycle Policies, and understanding block vs. object storage tradeoffs. |
-| `06_Networking_VPC_Route53` | 🌐 Networking | Building secure, isolated network environments (VPC) from scratch with proper subnet design, routing tables, and DNS management. |
-| `07_Security_IAM_KMS_Auditing` | 🔐 Security & Identity | Implementing least-privilege access controls with IAM, encrypting data at rest with KMS, and auditing activity with CloudTrail. |
-| `Portfolio_Projects` | 🌟 Integration | Real-world projects combining multiple services to solve actual business problems. |
+| `03_Database_SQL_Fundamentals` | 🗃️ Database Literacy | SQL proficiency (CRUD operations), data modeling, and understanding how to work with managed database services like RDS. |
+| `04_Compute_Services_EC2_Lambda` | ⚙️ Compute | Provisioning EC2 instances, deploying serverless functions, understanding compute optimization, and building event-driven architectures. |
+| `05_Storage_S3_EBS` | 💎 Storage | Data durability strategies, cost management with S3 Lifecycle Policies, and understanding block vs. object storage tradeoffs. |
+| `06_Networking_VPC_Route53` | 🕸️ Networking | Building secure, isolated network environments (VPC) from scratch with proper subnet design, routing tables, and DNS management. |
+| `07_Security_IAM_KMS_Auditing` | 🏰 Security & Identity | Implementing least-privilege access controls with IAM, encrypting data at rest with KMS, and auditing activity with CloudTrail. |
+| `Portfolio_Projects` | 🔗 Integration | Real-world projects combining multiple services to solve actual business problems. |
 
 ---
 
@@ -69,7 +71,7 @@ I prioritize the stuff that actually impacts production environments—security,
 
 ---
 
-### 1️⃣ Cloud Economics, Billing & Compliance 💰
+### 🏦 Cloud Economics, Billing & Compliance
 
 I'm comfortable discussing the financial side of cloud architecture:
 
@@ -80,7 +82,7 @@ I'm comfortable discussing the financial side of cloud architecture:
 
 ---
 
-### 2️⃣ The AWS Well-Architected Framework
+### 🏛️ The AWS Well-Architected Framework
 
 Every architectural decision in this repository is guided by the six pillars.  
 It's not just a checklist for the exam—it's the framework for building production-grade systems:
@@ -97,22 +99,22 @@ When I design infrastructure, I'm not just making it work—I'm making it work w
 
 ---
 
-## 🎯 Why This Approach Works
+## 💎 Why This Approach Works
 
 Most portfolios show *what* someone built.  
 This repository shows *how* I think about building.
 
 **What makes this different:**
-- 📊 **Strategic thinking:** Nearly a decade of turning business requirements into technical solutions informs every architectural choice
+- 📈 **Strategic thinking:** Nearly a decade of turning business requirements into technical solutions informs every architectural choice
 - 🔧 **Hands-on execution:** Every project is something I actually deployed, debugged, and documented—not just conceptual knowledge
 - 📝 **Clear documentation:** If you can't explain it clearly, you don't understand it well enough. I document like I'm onboarding someone new
-- 💡 **Real-world focus:** I build for production concerns—security, scalability, cost—not just for passing labs
+- 🌟 **Real-world focus:** I build for production concerns—security, scalability, cost—not just for passing labs
 
 I'm not here to fake 10 years of AWS experience. I'm here to show what cross-functional excellence looks like when a strategist learns to architect.
 
 ---
 
-## 📌 Current Focus & Next Steps
+## 📍 Current Focus & Next Steps
 
 **Right now I'm working on:**
 - Completing the CloudFormation (IaC) documentation with reusable templates
@@ -129,7 +131,7 @@ This repository updates weekly as I progress through the AWS Restart program. I'
   <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square" />
 </p>
 
-<h4 align="center">☁️ Built with AWS • Python • Linux • CloudFormation • Real-World Scenarios ☁️</h4>
+<h4 align="center">🌐 Built with AWS • Python • Linux • CloudFormation • Real-World Scenarios 🌐</h4>
 
 <p align="center">
   <a href="mailto:leroym.biz@gmail.com">
