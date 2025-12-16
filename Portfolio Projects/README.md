@@ -1,4 +1,4 @@
-# 🚀 Portfolio Projects: Real-World AWS Solutions
+# 🛸 Portfolio Projects: Real-World AWS Solutions
 
 <p align="center">
   <img src="../Lab Assets/screenshots/Project_folder_header.png" alt="AWS Portfolio Projects Header" width="100%">
@@ -8,7 +8,7 @@
 
 ---
 
-## 📋 What's Inside
+## 📜 What's Inside
 
 - [About This Portfolio](#about-this-portfolio)
 - [Featured Projects](#featured-projects)
@@ -135,7 +135,7 @@ Portfolio_Projects/
 
 ## Skills Demonstrated
 
-### 🛠️ Cloud Architecture
+### 💎 Cloud Architecture
 
 **What I'm Building:**
 - Multi-tier AWS architectures with proper separation of concerns
@@ -150,7 +150,7 @@ Portfolio_Projects/
 
 ---
 
-### 🔐 Security Engineering
+### 🏰 Security Engineering
 
 **What I'm Implementing:**
 - Zero-trust security models (S3 buckets locked to CloudFront only)
@@ -165,7 +165,7 @@ Portfolio_Projects/
 
 ---
 
-### 📊 Systems Design & Trade-offs
+### 🗠 Systems Design & Trade-offs
 
 **What I'm Analyzing:**
 - Right-sizing resources to balance performance and cost
@@ -180,7 +180,7 @@ Portfolio_Projects/
 
 ---
 
-### 💼 Business Communication
+### 🎖️ Business Communication
 
 **What I'm Delivering:**
 - Technical solutions presented in business language
@@ -195,7 +195,7 @@ Portfolio_Projects/
 
 ---
 
-### ⚡ Performance Optimization
+### 🗲 Performance Optimization
 
 **What I'm Optimizing:**
 - Content delivery network configuration and edge caching strategies
@@ -210,7 +210,7 @@ Portfolio_Projects/
 
 ---
 
-### 🏗️ High Availability & Disaster Recovery
+### 🏛️ High Availability & Disaster Recovery
 
 **What I'm Engineering:**
 - Multi-AZ deployments for fault tolerance
@@ -287,25 +287,25 @@ For me:
 
 ---
 
-## 🎯 Project Roadmap
+## 🎗️ Project Roadmap
 
 **Completed:**
-- ✅ Ember & Co Static Website (S3, CloudFront, Route 53, IAM)
-- ✅ Pet Shore 3D E-Commerce Architecture (Multi-tier design, Auto Scaling, Multi-AZ)
+- 💎 Ember & Co Static Website (S3, CloudFront, Route 53, IAM)
+- 💎 Pet Shore 3D E-Commerce Architecture (Multi-tier design, Auto Scaling, Multi-AZ)
 
 **In Progress:**
 - 🔄 Project 03: AWS Lex Bot (Conversational AI)
 
 **Planned:**
-- 📋 Serverless API (Lambda, API Gateway, DynamoDB)
-- 📋 Data pipeline (S3, Lambda, Glue, Athena)
-- 📋 CI/CD pipeline (CodePipeline, CodeBuild, CodeDeploy)
+- 📃 Serverless API (Lambda, API Gateway, DynamoDB)
+- 📃 Data pipeline (S3, Lambda, Glue, Athena)
+- 📃 CI/CD pipeline (CodePipeline, CodeBuild, CodeDeploy)
 
 Each project will demonstrate different AWS services and solve different business problems. The goal is a portfolio showcasing the full range of cloud engineering skills.
 
 ---
 
-## 📝 Project Status
+## 📜 Project Status
 
 This is an **active learning portfolio**—projects are added as I complete them. Check back regularly for new AWS solutions.
 
@@ -315,7 +315,7 @@ This is an **active learning portfolio**—projects are added as I complete them
 
 ---
 
-## 🤝 Let's Connect
+## 🤲 Let's Connect
 
 If you're looking for someone who can build AWS infrastructure **and** explain why it matters to the business—let's talk.
 
@@ -342,4 +342,4 @@ If you're looking for someone who can build AWS infrastructure **and** explain w
   <img src="https://img.shields.io/badge/Focus-Production%20Ready%20Solutions-blue?style=flat-square">
 </p>
 
-<p align="center">🚀 <strong>Built with AWS • Real Business Problems • Professional Documentation</strong> 🚀</p>
+<p align="center">🛸 <strong>Built with AWS • Real Business Problems • Professional Documentation</strong> 🛸</p>
