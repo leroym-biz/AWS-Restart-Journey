@@ -124,7 +124,7 @@ The Pet Shore architecture project relied heavily on this knowledge: isolating d
 
 **Status:** 🏁 Completed  
 **Completed:** November 12, 2025  
-**Certificate:** <img src="assets/screenshots/Introduction%20to%20AWS%20Identity%20and%20Access%20Management%20(IAM).png" alt="IAM Certificate" width="150">
+**Certificate:** <img src="assets/screenshots/Introduction to AWS Identitty and Access Management (IAM).png" alt="IAM Certificate" width="150">
 
 **What This Training Covered:**
 
