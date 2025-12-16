@@ -1,10 +1,10 @@
-# 🚀 AWS Lambda Serverless Computing Demo
+# 🛸 AWS Lambda Serverless Computing Demo
 
 > **Building serverless functions that scale automatically—because who wants to manage servers anyway?**
 
 ---
 
-## 📜 What's Inside
+## 🗂️ What's Inside
 
 - [What I Built Here](#what-i-built-here)
 - [Architecture Overview](#architecture-overview)
@@ -20,10 +20,10 @@
 This lab goes deep into **AWS Lambda**—the serverless compute service that lets you run code without thinking about servers. I built a multi-function serverless architecture that handles events, sends notifications, and processes data extractions.
 
 The real value here wasn't just writing Lambda functions—it was understanding how serverless architecture actually works in production:  
-💎 **Event-driven architecture** with SNS topics and subscriptions  
-💎 **Automated deployments** using Lambda layers and custom runtimes  
-💎 **Data processing pipelines** with S3 triggers and API Gateway  
-💎 **Cost-effective scaling** that only charges for actual compute time
+🎖️ **Event-driven architecture** with SNS topics and subscriptions  
+🎖️ **Automated deployments** using Lambda layers and custom runtimes  
+🎖️ **Data processing pipelines** with S3 triggers and API Gateway  
+🎖️ **Cost-effective scaling** that only charges for actual compute time
 
 **Tech Stack:** AWS Lambda, Python 3.9, Amazon SNS, Amazon S3, API Gateway, CloudWatch
 
@@ -53,7 +53,7 @@ This is the kind of architecture that scales from zero to millions of requests w
 
 ## The Lambda Functions
 
-### Function 1: SNS Topic Creation
+### ① SNS Topic Creation
 
 The first function I built creates an SNS topic programmatically. This is Infrastructure as Code in action—defining resources through Lambda instead of clicking through the console.
 
@@ -88,7 +88,7 @@ def lambda_handler(event, context):
     }
 ```
 
-### Function 2: SNS Subscription Management
+### ② SNS Subscription Management
 
 <p align="center">
   <img src="assets/screenshots/create-subscription.png" alt="Create SNS Subscription" width="80%"/>
@@ -114,10 +114,10 @@ This function handles SNS subscriptions—connecting email addresses to topics s
 *Successful subscription creation—user will receive a confirmation email*
 
 **What Makes This Production-Ready:**
-- ✓ Input validation on email addresses
-- ✓ Proper error handling and logging
-- ✓ Returns meaningful status codes
-- ✓ Idempotent—running twice won't create duplicates
+- 🎯 Input validation on email addresses
+- 🎯 Proper error handling and logging
+- 🎯 Returns meaningful status codes
+- 🎯 Idempotent—running twice won't create duplicates
 
 ---
 
@@ -134,10 +134,10 @@ This function handles SNS subscriptions—connecting email addresses to topics s
 Lambda layers let you package dependencies separately from your function code. This means faster deployments and cleaner code organization.
 
 **Why Lambda Layers Matter:**
-- 📦 **Reusability:** Share code across multiple functions
-- 📦 **Smaller packages:** Your function code stays lean
-- 📦 **Version control:** Update dependencies without redeploying functions
-- 📦 **Faster deploys:** Upload dependencies once, use everywhere
+- 🔗 **Reusability:** Share code across multiple functions
+- 🔗 **Smaller packages:** Your function code stays lean
+- 🔗 **Version control:** Update dependencies without redeploying functions
+- 🔗 **Faster deploys:** Upload dependencies once, use everywhere
 
 I packaged a custom Python library that multiple functions need. Instead of bundling it with each function (bloat), I created one layer that all functions reference.
 
@@ -195,10 +195,10 @@ No hardcoded values. Everything configurable. That's how you do it right.
 For functions that need to access resources in a VPC (like RDS databases or private APIs), I configured VPC integration with proper subnet selection.
 
 **VPC Best Practices:**
-- 🔒 Use private subnets for Lambda functions
-- 🔒 Attach NAT Gateway for internet access
-- 🔒 Security groups with minimal ingress rules
-- 🔒 VPC endpoints for AWS service access (avoid NAT charges)
+- 🏰 Use private subnets for Lambda functions
+- 🏰 Attach NAT Gateway for internet access
+- 🏰 Security groups with minimal ingress rules
+- 🏰 VPC endpoints for AWS service access (avoid NAT charges)
 
 ### Deployment Package Upload
 
@@ -228,22 +228,22 @@ The key is keeping your deployment package under 50MB for direct uploads. Anythi
 
 ### Technical Skills I Practiced
 
-⚙️ **Serverless Architecture**
+📚 **Serverless Architecture**
 - Building event-driven systems with Lambda
 - Understanding execution models and cold starts
 - Designing for stateless, scalable functions
 
-⚙️ **AWS Service Integration**
+📚 **AWS Service Integration**
 - Connecting Lambda with SNS, S3, and API Gateway
 - Managing IAM roles and permissions
 - Using CloudWatch for monitoring and debugging
 
-⚙️ **DevOps & Automation**
+📚 **DevOps & Automation**
 - Creating Lambda layers for code reusability
 - Environment-based configuration management
 - Infrastructure as Code with Lambda-based provisioning
 
-⚙️ **Cost Optimization**
+📚 **Cost Optimization**
 - Pay-per-request pricing model
 - Right-sizing memory allocation
 - Using layers to reduce deployment package sizes
@@ -252,10 +252,10 @@ The key is keeping your deployment package under 50MB for direct uploads. Anythi
 
 This project showed me why serverless is such a game-changer:
 
-- 🎯 **No server management** — AWS handles scaling, patching, availability
-- 🎯 **Pay for what you use** — Charged by millisecond, not by hour
-- 🎯 **Auto-scaling** — Handles one request or one million
-- 🎯 **Event-driven** — Everything reacts to real events, not polling
+- 📍 **No server management** — AWS handles scaling, patching, availability
+- 📍 **Pay for what you use** — Charged by millisecond, not by hour
+- 📍 **Auto-scaling** — Handles one request or one million
+- 📍 **Event-driven** — Everything reacts to real events, not polling
 
 The shift from "managing servers" to "managing functions" is massive. You stop thinking about infrastructure and start thinking about business logic.
 
@@ -290,7 +290,7 @@ Connect Lambda to private resources securely while maintaining the ability to ac
 
 ---
 
-## 🧭 Project Status
+## 📍 Project Status
 
 This is part of my **AWS Restart Journey**, a three-month focused portfolio documenting my path to the AWS Cloud Practitioner certification and beyond.
 
@@ -298,7 +298,7 @@ I'm building real projects, not just following tutorials. The goal is to prove I
 
 ---
 
-## 💭 Let's Connect
+## 🤝 Let's Connect
 
 If you're looking for someone who's serious about learning AWS the right way—hands-on, documented, and grounded in real-world architecture—let's talk.
 
@@ -324,4 +324,4 @@ If you're looking for someone who's serious about learning AWS the right way—h
   <img src="https://img.shields.io/badge/Commitment-Hands%20On%20Every%20Week-brightgreen?style=flat-square" />
 </p>
 
-<h4 align="center">🚀 Built with AWS Lambda • Python • SNS • API Gateway • Real Serverless Patterns 🚀</h4>
+<h4 align="center">🦅 Built with AWS Lambda • Python • SNS • API Gateway • Real Serverless Patterns 🦅</h4>
