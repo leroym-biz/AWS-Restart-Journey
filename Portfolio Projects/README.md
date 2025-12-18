@@ -91,17 +91,37 @@ I'm not just spinning up resources and calling it a day. I'm designing solutions
 
 ---
 
-### Project 03: AWS Lex Bot (TBD)
+### Project 03: Cloud Learners Inc - IAM Security Training Chatbot
 
-  <img src="https://img.shields.io/badge/Status-In%20Development-yellow?style=flat-square">
-  <img src="https://img.shields.io/badge/AWS-Lex%20%7C%20Lambda-orange?style=flat-square">
+  <img src="https://img.shields.io/badge/Status-Complete-success?style=flat-square">
+  <img src="https://img.shields.io/badge/AWS-Lex%20%7C%20Lambda%20%7C%20CloudWatch-orange?style=flat-square">
   <img src="https://img.shields.io/badge/Focus-Conversational%20AI-blue?style=flat-square">
 
-**Status:** In Development
+**The Problem:** Students consistently confuse IAM Users vs Roles, Authentication vs Authorization, and over-permission with Administrator Access. Traditional lectures result in passive learning with low retention—and 40% of cloud security breaches stem from IAM misconfigurations.
 
-Building conversational AI solutions with AWS Lex. More details coming soon as the project progresses.
+**The Solution:** Built an intelligent conversational AI that teaches AWS IAM through scenario-based questioning:
+- **Serverless architecture (Lex + Lambda)** where Lex is the "mouth" and Lambda is the "brain"
+- **Branching logic** that teaches from wrong answers, not just validates correct ones
+- **Natural language input handling** supporting conversational responses like "I think B"
+- **Production-grade code** with input normalization, error handling, and CloudWatch logging
 
-[📂 Project Folder](./project_03_AWS_Lex_Bot_(TBD)/)
+**Technical Impact:**
+- 3 scenario-based questions addressing real IAM confusion points
+- 4 distinct conversation paths based on answer correctness
+- Under $3 for 1,000 quiz completions with automatic scaling
+- Educational feedback explaining production consequences of wrong answers
+
+**Tech Stack:** AWS Lex V2, Lambda (Node.js), CloudWatch, IAM
+
+**Key Takeaway:** This project proved I can build conversational AI that creates real learning moments. We didn't ask "What is IAM?"—we asked "Your EC2 needs S3 access. IAM User or Role?" Context creates memory. Branching logic transforms information retrieval into education.
+
+**Real Challenges Solved:**
+- Lambda permission denied (learned resource-based policies the hard way)
+- Invalid input handling (Lex slot configuration vs Lambda validation)
+- Natural language processing (regex pattern matching for conversational input)
+- Response formatting (visual separators for chat interface readability)
+
+[📂 View Project Details](./project_03_AWS_Lex_Bot/)
 
 ---
 
@@ -120,8 +140,11 @@ Portfolio_Projects/
 │   ├── assets/
 │   │   └── screenshots/          # Architecture diagrams
 │   └── 3D-Architecture-Design.md # Design document
-├── project_03_AWS_Lex_Bot_(TBD)/
-│   └── [In Development]
+├── project_03_AWS_Lex_Bot/
+│   ├── assets/
+│   │   └── screenshots/          # solution architecture.png
+│   ├── Presentation Project 3 Cloud Learners Inc. Interactive IAM Quiz Bot.pdf
+│   └── lex-chatbot.md            # Full project documentation
 └── README.md                      # This file
 ```
 
@@ -146,11 +169,11 @@ Portfolio_Projects/
 **Projects Showcasing This:**
 - **Ember & Co:** Serverless S3 + CloudFront architecture with zero server management
 - **Pet Shore:** 3-tier architecture spanning presentation, application, and data layers
-- **Coming:** Lambda-based serverless APIs and event-driven architectures
+- **Cloud Learners:** Serverless Lex + Lambda with automatic scaling and event-driven design
 
 ---
 
-### 🏰 Security Engineering
+### 🛡️ Security Engineering
 
 **What I'm Implementing:**
 - Zero-trust security models (S3 buckets locked to CloudFront only)
@@ -161,11 +184,11 @@ Portfolio_Projects/
 **Projects Showcasing This:**
 - **Ember & Co:** CloudFront Service Principal with SourceArn conditions
 - **Pet Shore:** VPC isolation, private subnets, security groups for traffic control
-- **Coming:** KMS encryption, WAF integration, secrets management
+- **Cloud Learners:** Resource-based policies for Lambda, service-to-service authentication, teaching IAM security through conversational AI
 
 ---
 
-### 🗠 Systems Design & Trade-offs
+### 🗂️ Systems Design & Trade-offs
 
 **What I'm Analyzing:**
 - Right-sizing resources to balance performance and cost
@@ -176,7 +199,7 @@ Portfolio_Projects/
 **Projects Showcasing This:**
 - **Ember & Co:** S3 static hosting vs. EC2 web servers—storage cost optimization
 - **Pet Shore:** RDS for consistency vs. DynamoDB for speed—dual-database rationale
-- **Coming:** Lambda vs. EC2, Step Functions vs. custom orchestration
+- **Cloud Learners:** Serverless vs EC2 hosting, 3 questions vs 10+, IAM vs S3 topic choice
 
 ---
 
@@ -191,7 +214,7 @@ Portfolio_Projects/
 **Projects Showcasing This:**
 - **Ember & Co:** Complete business case presentation with 7-week migration roadmap
 - **Pet Shore:** Architecture decision records explaining trade-offs to non-technical stakeholders
-- **Coming:** Technical proposals, architecture decision documents
+- **Cloud Learners:** Professional stakeholder presentation to fictional client "Cloud Learners Inc." with live demo
 
 ---
 
@@ -206,11 +229,11 @@ Portfolio_Projects/
 **Projects Showcasing This:**
 - **Ember & Co:** CloudFront edge caching for sub-100ms global load times
 - **Pet Shore:** 28s to 3s load time improvement through CDN optimization and file compression
-- **Coming:** Lambda cold start optimization, database indexing strategies
+- **Cloud Learners:** Input normalization with regex for instant response, Lambda cold start optimization
 
 ---
 
-### 🏛️ High Availability & Disaster Recovery
+### 🛡️ High Availability & Disaster Recovery
 
 **What I'm Engineering:**
 - Multi-AZ deployments for fault tolerance
@@ -221,7 +244,20 @@ Portfolio_Projects/
 **Projects Showcasing This:**
 - **Ember & Co:** S3 versioning for rollback capability
 - **Pet Shore:** Multi-AZ architecture surviving entire data center failures
-- **Coming:** Cross-region replication, disaster recovery runbooks
+- **Cloud Learners:** Serverless architecture with automatic scaling and zero infrastructure management
+
+---
+
+### 🤖 AI & Machine Learning Integration
+
+**What I'm Building:**
+- Conversational AI with natural language understanding
+- Branching logic for intelligent decision-making
+- Educational systems that teach from mistakes
+- Scenario-based learning experiences
+
+**Projects Showcasing This:**
+- **Cloud Learners:** Amazon Lex V2 for natural language understanding, Lambda for conditional logic, scenario-based quiz with 4 conversation paths, production-ready input normalization
 
 ---
 
@@ -232,7 +268,7 @@ Portfolio_Projects/
 I'm not building "Deploy a static website to S3" tutorials. I'm solving actual business problems:
 - Restaurant losing revenue from double-bookings
 - E-commerce platform needing to handle 50MB 3D models without losing customers
-- Organizations requiring secure, scalable infrastructure
+- Educational startup needing to clarify IAM confusion points causing 40% of breaches
 
 ### 2. Production-Ready Architecture
 
@@ -275,8 +311,9 @@ But I'm not just chasing a cert. I'm building **proof of work**:
 
 For hiring managers:
 - Can you architect AWS solutions? ✅ Yes, here's the 3-tier Pet Shore architecture
-- Can you implement security? ✅ Yes, here's the CloudFront-only access policy
+- Can you implement security? ✅ Yes, here's the CloudFront-only access policy and IAM training chatbot
 - Can you optimize for performance? ✅ Yes, here's the 28s to 3s load time improvement
+- Can you build AI solutions? ✅ Yes, here's the Lex chatbot with branching logic
 - Can you present to stakeholders? ✅ Yes, here's the PowerPoint deck
 - Can you document your work? ✅ Yes, here's the complete README with trade-off analysis
 
@@ -292,9 +329,7 @@ For me:
 **Completed:**
 - 💎 Ember & Co Static Website (S3, CloudFront, Route 53, IAM)
 - 💎 Pet Shore 3D E-Commerce Architecture (Multi-tier design, Auto Scaling, Multi-AZ)
-
-**In Progress:**
-- 🔄 Project 03: AWS Lex Bot (Conversational AI)
+- 💎 Cloud Learners IAM Training Chatbot (Lex V2, Lambda, CloudWatch, Conversational AI)
 
 **Planned:**
 - 📃 Serverless API (Lambda, API Gateway, DynamoDB)
@@ -338,7 +373,7 @@ If you're looking for someone who can build AWS infrastructure **and** explain w
 
 <p align="center">
   <img src="https://img.shields.io/badge/Portfolio-Active%20Development-success?style=flat-square">
-  <img src="https://img.shields.io/badge/Projects-3%20Active-brightgreen?style=flat-square">
+  <img src="https://img.shields.io/badge/Projects-3%20Complete-brightgreen?style=flat-square">
   <img src="https://img.shields.io/badge/Focus-Production%20Ready%20Solutions-blue?style=flat-square">
 </p>
 
