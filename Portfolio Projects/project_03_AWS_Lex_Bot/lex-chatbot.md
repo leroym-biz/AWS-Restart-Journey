@@ -1,4 +1,4 @@
-# 🤖 AWS Lex IAM Security Training Chatbot
+# 🛸 AWS Lex IAM Security Training Chatbot
 
 > **Building an intelligent conversational AI that teaches AWS IAM through scenario-based questioning—because security isn't optional.**
 
@@ -54,6 +54,12 @@ This question format mirrors real-world decision-making and creates context that
 ---
 
 ## Architecture Overview
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/50fb40cd-6ff8-4251-ba07-2a434d629ee0" width="350" autoplay loop muted playsinline></video>
+  <br>
+  <em>Live Demonstration: AWS Lex IAM Security Chatbot in action</em>
+</div>
 
 ### The Serverless Design
 
