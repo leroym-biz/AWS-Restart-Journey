@@ -1,4 +1,4 @@
-# 🤖 AWS Lex IAM Security Training Chatbot
+# 🛸 AWS Lex IAM Security Training Chatbot
 
 > **Building an intelligent conversational AI that teaches AWS IAM through scenario-based questioning—because security isn't optional.**
 
